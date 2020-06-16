@@ -32,9 +32,4 @@ public class PlayerController : MonoBehaviour
             transform.Translate(speed * Time.deltaTime, 0.0f, 0.0f);
         }
     }
-
-    private void Collider()
-    {
-
-    }
 }
