@@ -1,0 +1,1172 @@
+fileFormatVersion: 2
+guid: 9a85213a29169e640a62105696c7d731
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6611481508832206550
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_0
+  - first:
+      213: -3142358905541642273
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_1
+  - first:
+      213: -9011420688162280171
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_2
+  - first:
+      213: -3320385582917114802
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_3
+  - first:
+      213: -4569463158185868566
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_4
+  - first:
+      213: -5048330319751344334
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_5
+  - first:
+      213: 2096359130435322194
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_6
+  - first:
+      213: -8332151780989966590
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_7
+  - first:
+      213: 8989745557505664633
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_8
+  - first:
+      213: -4221611455900519759
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_9
+  - first:
+      213: 7457488947783512657
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_10
+  - first:
+      213: -7683531222636342624
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_11
+  - first:
+      213: 758748663374421560
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_12
+  - first:
+      213: -3361553690985812624
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_13
+  - first:
+      213: -1949818076930424040
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_14
+  - first:
+      213: 1823965940946131294
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_15
+  - first:
+      213: -1209957466241887059
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_16
+  - first:
+      213: -5187267462106658442
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_17
+  - first:
+      213: 9105427483508368349
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_18
+  - first:
+      213: -6309418820118649017
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_19
+  - first:
+      213: 585778249534729022
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_20
+  - first:
+      213: 499779288015604513
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_21
+  - first:
+      213: -7542839392710019423
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_22
+  - first:
+      213: -8572699827918231489
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_23
+  - first:
+      213: -4004405977045488528
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_24
+  - first:
+      213: 1712649592656242976
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_25
+  - first:
+      213: 5799141087937072506
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_26
+  - first:
+      213: -23154278104597282
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_27
+  - first:
+      213: -4030336148902173037
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_28
+  - first:
+      213: 1164854902968157689
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_29
+  - first:
+      213: -3304995274915396347
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_30
+  - first:
+      213: -8978819195484506149
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_31
+  - first:
+      213: 6616603484488711262
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_32
+  - first:
+      213: -5435906953187312435
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_33
+  - first:
+      213: 3265430696209317410
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_34
+  - first:
+      213: 394718092890286723
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_35
+  - first:
+      213: 5161979134180967475
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_36
+  - first:
+      213: 3212161706554256484
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_37
+  - first:
+      213: -5344227389057631510
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_38
+  - first:
+      213: -101591356446536108
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_39
+  - first:
+      213: -4447253574932272688
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_40
+  - first:
+      213: 7948867883323845818
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_41
+  - first:
+      213: 6190361939638600837
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_42
+  - first:
+      213: 1770893367861311488
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_43
+  - first:
+      213: -2220604153988183232
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_44
+  - first:
+      213: 2706271962872576178
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_45
+  - first:
+      213: 1563225655032570652
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_46
+  - first:
+      213: 5503212622463945385
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_47
+  - first:
+      213: -3215080494305278499
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_48
+  - first:
+      213: -2583245737698679726
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_49
+  - first:
+      213: 1629781682721016654
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_50
+  - first:
+      213: 1695182037349117147
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_51
+  - first:
+      213: -8250542710021040552
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_52
+  - first:
+      213: -8685703286082920396
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_53
+  - first:
+      213: -4801860333506769053
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_54
+  - first:
+      213: -199154363075439062
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_55
+  - first:
+      213: 6663235804593877479
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_56
+  - first:
+      213: 3297066989835700217
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_57
+  - first:
+      213: 5354887797965609261
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_58
+  - first:
+      213: -6912067644758607919
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_59
+  - first:
+      213: 3660282322506573483
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_60
+  - first:
+      213: 7231497547571978919
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_61
+  - first:
+      213: 555789727039418301
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_62
+  - first:
+      213: 6702314013134723930
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_63
+  - first:
+      213: -9166567695623493596
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_64
+  - first:
+      213: 1511015588122530880
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_65
+  - first:
+      213: -8442927570733158017
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_66
+  - first:
+      213: -7637918519239746044
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_67
+  - first:
+      213: 9076861379586645585
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_68
+  - first:
+      213: -699203617674648471
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_69
+  - first:
+      213: -7111685895321338392
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_70
+  - first:
+      213: 168766254722881954
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_71
+  - first:
+      213: -2916801179519341847
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_72
+  - first:
+      213: 8420680861106932414
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_73
+  - first:
+      213: -3071830031488960401
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_74
+  - first:
+      213: 3433382205023254881
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_75
+  - first:
+      213: -449381664427539749
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_76
+  - first:
+      213: -8659412055075183031
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_77
+  - first:
+      213: 6681672131155943321
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_78
+  - first:
+      213: -434707900431096152
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_79
+  - first:
+      213: 6828183800684805541
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_80
+  - first:
+      213: 8703784236642169110
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_81
+  - first:
+      213: -2479389056912355397
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_82
+  - first:
+      213: -2230914340670993124
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_83
+  - first:
+      213: 1629507915415732206
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_84
+  - first:
+      213: -4377932880167747252
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_85
+  - first:
+      213: 2672608701093414707
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_86
+  - first:
+      213: 7541877701036532658
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_87
+  - first:
+      213: 2078867735102486202
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_88
+  - first:
+      213: 2830356505476954075
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_89
+  - first:
+      213: 3861545697204220786
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_90
+  - first:
+      213: 8434303312819397750
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_91
+  - first:
+      213: -2846338132614891929
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_92
+  - first:
+      213: -4347623747322002622
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_93
+  - first:
+      213: 7244461789892041496
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_94
+  - first:
+      213: 5603750407041944785
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_95
+  - first:
+      213: -8671038300306553673
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_96
+  - first:
+      213: 6773483054084145153
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_97
+  - first:
+      213: -6662796397593088080
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_98
+  - first:
+      213: -8074520441023397680
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_99
+  - first:
+      213: 2917494330519027571
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_100
+  - first:
+      213: -2710653478002061239
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_101
+  - first:
+      213: -7788794245929923717
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_102
+  - first:
+      213: 4628937514601615688
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_103
+  - first:
+      213: 5326842382501729857
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_104
+  - first:
+      213: -6308649058632649016
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_105
+  - first:
+      213: -887059513174612742
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_106
+  - first:
+      213: -7342830795240955537
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_107
+  - first:
+      213: 2260528197226329907
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_108
+  - first:
+      213: -7943322176864668136
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_109
+  - first:
+      213: -9043446934559343622
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_110
+  - first:
+      213: -7579937613531026920
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_111
+  - first:
+      213: 8794100991486580131
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_112
+  - first:
+      213: 6285206711091590607
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_113
+  - first:
+      213: 5837477431343180957
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_114
+  - first:
+      213: 300343119945470209
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_115
+  - first:
+      213: 2079169652040542383
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_116
+  - first:
+      213: -1446204560222981795
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_117
+  - first:
+      213: 6825064806781224271
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_118
+  - first:
+      213: 2732381703902290742
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_119
+  - first:
+      213: -6156193599562352499
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_120
+  - first:
+      213: -4045537781806203551
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_121
+  - first:
+      213: 7605000269046625629
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_122
+  - first:
+      213: 3793923178962909711
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_123
+  - first:
+      213: 3694396245336726559
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_124
+  - first:
+      213: 8338820271902645781
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_125
+  - first:
+      213: 2255005552622299762
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_126
+  - first:
+      213: -271230408625522406
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_127
+  - first:
+      213: 6497675308815068674
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_128
+  - first:
+      213: 3384430077882362266
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_129
+  - first:
+      213: -1033719083688502720
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_130
+  - first:
+      213: -4848194468947335559
+    second: mv_edited_walls_floors_by_nicnubill_dck28ru_131
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 86
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7b76e69391464d0800000000000000
+      internalID: -3142358905541642273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 49
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d2b70f0a001f280800000000000000
+      internalID: -9011420688162280171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_3
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 49
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44a5ec87ee9be1d0800000000000000
+      internalID: -3320385582917114802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 49
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2c81ab7710690c0800000000000000
+      internalID: -4569463158185868566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 326
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a212efac89c4f34a0800000000000000
+      internalID: -6611481508832206550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f0366425ab0f9b0800000000000000
+      internalID: -5048330319751344334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_6
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2518e3ba583c71d10800000000000000
+      internalID: 2096359130435322194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 326
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207647fc9104e5c80800000000000000
+      internalID: -8332151780989966590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_8
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 326
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976654074fdf1cc70800000000000000
+      internalID: 8989745557505664633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_9
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 326
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b274577fb2d965c0800000000000000
+      internalID: -4221611455900519759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_10
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152b901cfa25e7760800000000000000
+      internalID: 7457488947783512657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_11
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a25326ef0d9e5590800000000000000
+      internalID: -7683531222636342624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 278
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e1c3aa3ed978a00800000000000000
+      internalID: 758748663374421560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 254
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d23637abc5951d0800000000000000
+      internalID: -3361553690985812624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 278
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8134de32acad0f4e0800000000000000
+      internalID: -1949818076930424040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 254
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5951880c57005910800000000000000
+      internalID: 1823965940946131294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_16
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 278
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da41257581e553fe0800000000000000
+      internalID: -1209957466241887059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 254
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679c03ef9bf1308b0800000000000000
+      internalID: -5187267462106658442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 278
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3689abd0afc5e70800000000000000
+      internalID: 9105427483508368349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_19
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 254
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747e9a703017078a0800000000000000
+      internalID: -6309418820118649017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_20
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 230
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3beaa0e63a112800800000000000000
+      internalID: 585778249534729022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_21
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 206
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b84405d929fe600800000000000000
+      internalID: 499779288015604513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_22
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 230
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a632b73983725790800000000000000
+      internalID: -7542839392710019423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 230
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38a1e63de6a70980800000000000000
+      internalID: -8572699827918231489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_24
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 230
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ca0c9eafd7d68c0800000000000000
+      internalID: -4004405977045488528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_25
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 206
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0292ef20bbd84c710800000000000000
+      internalID: 1712649592656242976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_26
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 206
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d8cd42810ba7050800000000000000
+      internalID: 5799141087937072506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_27
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 206
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc7b868e4dbdaff0800000000000000
+      internalID: -23154278104597282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_28
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 110
+        width: 24
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396254f40ae5118c0800000000000000
+      internalID: -4030336148902173037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_29
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 110
+        width: 24
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f50a42dc556a2010800000000000000
+      internalID: 1164854902968157689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_30
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 110
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505c25ede4c4222d0800000000000000
+      internalID: -3304995274915396347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mv_edited_walls_floors_by_nicnubill_dck28ru_31
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 14
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7ffa67383d46380800000000000000
+      internalID: -8978819195484506149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

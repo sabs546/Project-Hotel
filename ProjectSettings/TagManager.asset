@@ -44,6 +44,9 @@ TagManager:
   - name: BG
     uniqueID: 3687746643
     locked: 0
+  - name: Back Wall
+    uniqueID: 3297193163
+    locked: 0
   - name: Floor
     uniqueID: 2341665503
     locked: 0
@@ -52,4 +55,7 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 2893445049
+    locked: 0
+  - name: UI
+    uniqueID: 490424199
     locked: 0

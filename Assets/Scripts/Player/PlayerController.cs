@@ -6,10 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     private Transform transform;
+    private bool trigger;
+    private TextID text;
     // Start is called before the first frame update
     void Start()
     {
         transform = GetComponent<Transform>();
+        trigger = false;
     }
 
     // Update is called once per frame
@@ -30,6 +33,32 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         { // Right
             transform.Translate(speed * Time.deltaTime, 0.0f, 0.0f);
+        }
+    }
+
+    private void Update()
+    {
+        if (trigger)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                text.SetInteraction(!text.active);
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        trigger = true;
+        text = other.gameObject.GetComponent<TextID>();
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<TextID>() != null)
+        {
+            trigger = false;
+            other.gameObject.GetComponent<TextID>().SetInteraction(false);
         }
     }
 }
