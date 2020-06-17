@@ -5,14 +5,19 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+    public RectTransform inventory;
+    public bool inventoryActive;
     private Transform transform;
     private bool trigger;
     private TextID text;
+    private InventoryMGR inventoryMGR;
     // Start is called before the first frame update
     void Start()
     {
         transform = GetComponent<Transform>();
+        inventoryActive = false;
         trigger = false;
+        inventoryMGR = GetComponent<InventoryMGR>();
     }
 
     // Update is called once per frame
@@ -43,7 +48,25 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 text.SetInteraction(!text.active);
+                if (text.itemID != -1)
+                {
+                    inventoryMGR.AddItem(text.itemID);
+                }
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            inventoryActive = !inventoryActive;
+        }
+
+        if (inventoryActive && inventory.anchoredPosition.y < -63.0f)
+        {
+            inventory.anchoredPosition = new Vector3(inventory.anchoredPosition.x, inventory.anchoredPosition.y + 1000.0f * Time.deltaTime);
+        }
+        else if (!inventoryActive && inventory.anchoredPosition.y > -566.0f)
+        {
+            inventory.anchoredPosition = new Vector3(inventory.anchoredPosition.x, inventory.anchoredPosition.y - 1000.0f * Time.deltaTime);
         }
     }
 

@@ -5,6 +5,8 @@ using UnityEngine;
 public class TextID : MonoBehaviour
 {
     public GameObject interaction;
+    public int itemID;
+    [HideInInspector]
     public bool active;
     // Start is called before the first frame update
     void Start()
