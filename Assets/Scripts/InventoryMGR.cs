@@ -11,10 +11,17 @@ public class InventoryMGR : MonoBehaviour
     public GameObject imageArea;
     public GameObject descriptionArea;
     public Sprite[] imageStash;
+    public Sprite emptyImage;
+    public bool fullHide; // When the box is all the way down
+    private Image image;
+    private TextMeshProUGUI text;
     // Start is called before the first frame update
     void Start()
     {
-        
+        image = imageArea.GetComponent<Image>();
+        text = descriptionArea.GetComponent<TextMeshProUGUI>();
+        image.preserveAspect = true;
+        fullHide = false;
     }
 
     // Update is called once per frame
@@ -32,11 +39,8 @@ public class InventoryMGR : MonoBehaviour
 
         // Setting button value
         tempButton.GetComponentInChildren<Text>().text = item.name;
+        tempButton.GetComponent<InventoryButton>().itemID = item.ID;
         Instantiate(button, buttonArea.transform);
-
-        // Setting inventory values
-        imageArea.GetComponent<Image>().sprite = imageStash[item.ID];
-        descriptionArea.GetComponent<TextMeshProUGUI>().text = item.description;
     }
 
     private Item FindItem(int itemID)
@@ -47,5 +51,26 @@ public class InventoryMGR : MonoBehaviour
                 return new GenericItem();
         }
         return new GenericItem();
+    }
+
+    public void ShowItem(int itemID)
+    {
+        Item item = FindItem(itemID);
+        item.GenerateItem(ref item);
+        image.sprite = imageStash[itemID];
+        text.text = item.description;
+    }
+
+    public void HideItem()
+    {
+        image.sprite = emptyImage;
+        text.text = "";
+    }
+
+    public void FullHide()
+    {
+        fullHide = true;
+        image.sprite = emptyImage;
+        text.text = "";
     }
 }

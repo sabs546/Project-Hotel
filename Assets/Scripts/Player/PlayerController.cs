@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     public RectTransform inventory;
-    public bool inventoryActive;
+    private bool inventoryActive;
     private Transform transform;
     private bool trigger;
     private TextID text;
@@ -67,6 +67,8 @@ public class PlayerController : MonoBehaviour
         else if (!inventoryActive && inventory.anchoredPosition.y > -566.0f)
         {
             inventory.anchoredPosition = new Vector3(inventory.anchoredPosition.x, inventory.anchoredPosition.y - 1000.0f * Time.deltaTime);
+            if (inventory.anchoredPosition.y < -560.0f)
+                inventoryMGR.FullHide();
         }
     }
 
