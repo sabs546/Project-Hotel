@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class PlayerController : MonoBehaviour
     private bool inventoryActive;
     private Transform transform;
     private bool trigger;
+    private bool dTrigger;
     private TextID text;
+    private DialogueTrigger dText;
     private InventoryMGR inventoryMGR;
     // Start is called before the first frame update
     void Start()
@@ -51,7 +54,19 @@ public class PlayerController : MonoBehaviour
                 if (text.itemID != -1)
                 {
                     inventoryMGR.AddItem(text.itemID);
+                    text.itemID = -1;
                 }
+                if (!text.active)
+                    text.ChangeText();
+            }
+        }
+
+        if (dTrigger && !text.active)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                trigger = false;
+                dText.TriggerDialogue();
             }
         }
 
@@ -76,6 +91,11 @@ public class PlayerController : MonoBehaviour
     {
         trigger = true;
         text = other.gameObject.GetComponent<TextID>();
+        if (other.gameObject.GetComponent<DialogueTrigger>() != null)
+        {
+            dTrigger = true;
+            dText = other.gameObject.GetComponent<DialogueTrigger>();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -84,6 +104,12 @@ public class PlayerController : MonoBehaviour
         {
             trigger = false;
             other.gameObject.GetComponent<TextID>().SetInteraction(false);
+        }
+
+        if (other.gameObject.GetComponent<DialogueTrigger>() != null)
+        {
+            dTrigger = false;
+            other.gameObject.GetComponent<DialogueManager>().EndDialogue();
         }
     }
 }
