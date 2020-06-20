@@ -6,15 +6,15 @@ using TMPro;
 
 public class InventoryMGR : MonoBehaviour
 {
-    public GameObject button;
-    public GameObject buttonArea;
-    public GameObject imageArea;
-    public GameObject descriptionArea;
-    public Sprite[] imageStash;
-    public Sprite emptyImage;
-    public bool fullHide; // When the box is all the way down
-    private Image image;
-    private TextMeshProUGUI text;
+    public GameObject button;          // The button for the item
+    public GameObject buttonArea;      // The parent for the button
+    public GameObject imageArea;       // The image box
+    public GameObject descriptionArea; // The description box
+    public Sprite[] imageStash;        // All the item images
+    public Sprite emptyImage;          // When nothing is selected
+    public bool fullHide;              // When the box is all the way down
+    private Image image;               // The area for the image to be placed
+    private TextMeshProUGUI text;      // The description area for the item
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +54,7 @@ public class InventoryMGR : MonoBehaviour
     }
 
     public void ShowItem(int itemID)
-    {
+    { // When you click an item it appears on the display
         Item item = FindItem(itemID);
         item.GenerateItem(ref item);
         image.sprite = imageStash[itemID];
@@ -62,13 +62,13 @@ public class InventoryMGR : MonoBehaviour
     }
 
     public void HideItem()
-    {
+    { // Put it away when you re-click the button
         image.sprite = emptyImage;
         text.text = "";
     }
 
     public void FullHide()
-    {
+    { // Hide it when the inventory is put away
         fullHide = true;
         image.sprite = emptyImage;
         text.text = "";

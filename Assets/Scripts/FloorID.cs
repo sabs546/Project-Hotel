@@ -18,7 +18,7 @@ public class FloorID : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {
+    { // Change step sounds based on the floor you're on
         collision.GetComponent<SFXManager>().Surface(clip);
     }
 }

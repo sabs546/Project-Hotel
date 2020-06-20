@@ -9,7 +9,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        manager.StartDialogue(dialogue);
-        manager.DisplayNextSentence();
+        manager.StartDialogue(dialogue); // Start talking
+        manager.DisplayNextSentence(); // Otherwise it's just empty at first
     }
 }

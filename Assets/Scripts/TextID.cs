@@ -5,12 +5,12 @@ using TMPro;
 
 public class TextID : MonoBehaviour
 {
-    public GameObject interaction;
-    public List<GameObject> backupText;
+    public GameObject interaction;      // The actual interaction object that needs activating
+    public List<GameObject> backupText; // The text for after you've investigated it once
     public int itemID;
     [HideInInspector]
     public bool active;
-    private int textChain;
+    private int textChain;              // How many times have you read it
     private TextMeshProUGUI text;
     // Start is called before the first frame update
     void Start()
@@ -35,7 +35,7 @@ public class TextID : MonoBehaviour
     public void ChangeText()
     {
         if (textChain < backupText.Capacity)
-        {
+        { // As long as you don't run out of backup text, keep going
             text.text = backupText[textChain].GetComponent<TextMeshProUGUI>().text;
             textChain++;
         }
