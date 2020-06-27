@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1819868323257978964}
   - component: {fileID: 55144040575141690}
   - component: {fileID: 608044382430947505}
+  - component: {fileID: 5074843062871290617}
   m_Layer: 0
   m_Name: TempPlayer
   m_TagString: Player
@@ -100,7 +101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   inventory: {fileID: 0}
-  inventoryActive: 0
 --- !u!50 &8964459575664225834
 Rigidbody2D:
   serializedVersion: 4
@@ -263,3 +263,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3f1b57d5e65771c43a71d75a9d803e40, type: 3}
   - {fileID: 8300000, guid: cd1ce4928861cb64fb43f3aa75ae3d63, type: 3}
   - {fileID: 8300000, guid: 8d860edd876562644b17e271d3e23cc0, type: 3}
+--- !u!114 &5074843062871290617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885879664217446084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d408016da6ccce4780b032f1a3460ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 935623213666610571, guid: 09c12617e4c6a8a4c9c12161d147696e, type: 3}
+  buttonArea: {fileID: 0}
+  imageArea: {fileID: 0}
+  descriptionArea: {fileID: 0}
+  imageStash:
+  - {fileID: 1620439224390360588, guid: cb0dbb1d1422d544d8692d3672fc8bf6, type: 3}
+  emptyImage: {fileID: 21300000, guid: 212c7453348ef384a8701df90c722f2d, type: 3}
+  fullHide: 0

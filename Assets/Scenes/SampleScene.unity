@@ -6284,26 +6284,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7166330378862401659}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1335773178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335773177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d408016da6ccce4780b032f1a3460ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 935623213666610571, guid: 09c12617e4c6a8a4c9c12161d147696e, type: 3}
-  buttonArea: {fileID: 702737960}
-  imageArea: {fileID: 629073401}
-  descriptionArea: {fileID: 592371136}
-  imageStash:
-  - {fileID: 1620439224390360588, guid: cb0dbb1d1422d544d8692d3672fc8bf6, type: 3}
-  emptyImage: {fileID: 21300000, guid: 212c7453348ef384a8701df90c722f2d, type: 3}
-  fullHide: 0
 --- !u!1 &1368491707
 GameObject:
   m_ObjectHideFlags: 0
@@ -11257,6 +11237,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5074843062871290617, guid: 02a3acbe5784b7a4da83486a62c9accc,
+        type: 3}
+      propertyPath: buttonArea
+      value: 
+      objectReference: {fileID: 702737960}
+    - target: {fileID: 5074843062871290617, guid: 02a3acbe5784b7a4da83486a62c9accc,
+        type: 3}
+      propertyPath: imageArea
+      value: 
+      objectReference: {fileID: 629073401}
+    - target: {fileID: 5074843062871290617, guid: 02a3acbe5784b7a4da83486a62c9accc,
+        type: 3}
+      propertyPath: descriptionArea
+      value: 
+      objectReference: {fileID: 592371136}
     - target: {fileID: 6084499664182174426, guid: 02a3acbe5784b7a4da83486a62c9accc,
         type: 3}
       propertyPath: m_LocalPosition.x
