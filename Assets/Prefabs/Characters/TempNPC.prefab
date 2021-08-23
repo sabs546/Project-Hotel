@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f326166f4ef189c48b5632a3d81c3647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  portrait: {fileID: 0}
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogueObject: {fileID: 0}
@@ -117,6 +118,8 @@ MonoBehaviour:
     name: 
     sentences: []
     newSentences: []
+    questSentences: []
+    newQuestSentences: []
   manager: {fileID: 0}
 --- !u!114 &1881314685325583358
 MonoBehaviour:
@@ -131,8 +134,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interaction: {fileID: 0}
+  questInteraction: {fileID: 0}
   backupText: []
+  questBackupText: []
   itemID: -1
+  questCheck: 0
+  questItem: 0
+  removeQuestItem: 0
   active: 0
 --- !u!61 &8496101953751657961
 BoxCollider2D:
@@ -173,7 +181,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.5, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -184,5 +192,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 1}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
