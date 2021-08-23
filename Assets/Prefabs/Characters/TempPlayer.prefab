@@ -281,5 +281,10 @@ MonoBehaviour:
   descriptionArea: {fileID: 0}
   imageStash:
   - {fileID: 1620439224390360588, guid: cb0dbb1d1422d544d8692d3672fc8bf6, type: 3}
+  - {fileID: -6533696264093261591, guid: cb0dbb1d1422d544d8692d3672fc8bf6, type: 3}
+  - {fileID: 21300000, guid: 45021cff4218cd644ad466f691235aa2, type: 3}
+  - {fileID: 21300000, guid: 7bf5378e1af48504690fc846b6287b68, type: 3}
+  - {fileID: 1731521518038554317, guid: cb0dbb1d1422d544d8692d3672fc8bf6, type: 3}
   emptyImage: {fileID: 21300000, guid: 212c7453348ef384a8701df90c722f2d, type: 3}
   fullHide: 0
+  equippedItem: 0

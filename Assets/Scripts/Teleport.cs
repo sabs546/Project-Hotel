@@ -14,6 +14,7 @@ public class Teleport : MonoBehaviour
     private bool transition;
     private AudioSource source;
     private SpriteRenderer spr;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class Teleport : MonoBehaviour
         wipeRect = wipe.GetComponent<RectTransform>();
         source = GetComponent<AudioSource>();
         spr = wipeRect.GetComponent<SpriteRenderer>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -50,7 +52,14 @@ public class Teleport : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        source.Play();
+        if (source != null)
+        {
+            source.Play();
+        }
         transition = true;
+        if (animator != null)
+        {
+            animator.SetBool("Open", true);
+        }
     }
 }

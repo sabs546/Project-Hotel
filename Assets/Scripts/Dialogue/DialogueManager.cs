@@ -6,17 +6,21 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Image portrait;               // The portrait area of the guy (yet to be implemented)
+    public GameObject portrait;          // The portrait area of the guy (yet to be implemented)
     public TextMeshProUGUI nameText;     // The name area
     public TextMeshProUGUI dialogueText; // The dialogue area
     public GameObject dialogueObject;    // The entire dialogue area
+
     private Queue<string> sentences;     // All of the text for multiple lines of text
     private bool seen;
+    private bool questSeen;
+
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
         seen = false;
+        questSeen = false;
     }
 
     // Update is called once per frame
@@ -27,9 +31,22 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+
         nameText.text = dialogue.name;
         sentences.Clear();
         dialogueObject.SetActive(true);
+        if (GetComponent<TextID>().questCheck)
+        {
+            if (!questSeen) // If this is your first time talking
+                foreach (string sentence in dialogue.questSentences)
+                    sentences.Enqueue(sentence);
+            else // After that new sentences come out
+                foreach (string sentence in dialogue.newQuestSentences)
+                    sentences.Enqueue(sentence);
+            questSeen = true;
+            return;
+        }
+
         if (!seen) // If this is your first time talking
             foreach (string sentence in dialogue.sentences)
                 sentences.Enqueue(sentence);

@@ -10,4 +10,8 @@ public class Dialogue
     public string[] sentences;
     [TextArea(3, 10)]
     public string[] newSentences;
+    [TextArea(3, 10)]
+    public string[] questSentences;
+    [TextArea(3, 10)]
+    public string[] newQuestSentences;
 }

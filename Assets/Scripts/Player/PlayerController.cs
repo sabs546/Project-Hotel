@@ -7,17 +7,18 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;                // Just movement
     public RectTransform inventory;    // Used for the position of the inventory
+
     private bool inventoryActive;      // Is the inventory opened
-    private Transform transform;       // Just makes getting the transform easier
     private bool trigger;              // Is the inspection text hitbox active
     private bool dTrigger;             // Is the dialogue text hitbox active
     private TextID text;               // Reference to the inspection script
     private DialogueTrigger dText;     // Reference to the dialogue script
+    private DialogueManager dManager;  // Reference to the dialogue manager
     private InventoryMGR inventoryMGR; // Reference to the inventory manager
+
     // Start is called before the first frame update
     void Start()
     {
-        transform = GetComponent<Transform>();
         inventoryActive = false;
         trigger = false;
         inventoryMGR = GetComponent<InventoryMGR>();
@@ -46,31 +47,39 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (trigger)
+        if (Input.GetKeyDown(KeyCode.E) && !inventoryActive &&
+            trigger && (dManager == null || !dManager.dialogueObject.activeSelf))
         { // The normal trigger for inspection
-            if (Input.GetKeyDown(KeyCode.E))
+            int equippedItem = inventoryMGR.equippedItem;
+            if (text != null && equippedItem == text.questItem)
             {
-                text.SetInteraction(!text.active);
-                if (text.itemID != -1)
-                {
-                    inventoryMGR.AddItem(text.itemID);
-                    text.itemID = -1;
-                }
-                if (!text.active)
-                    text.ChangeText();
+                inventoryMGR.RemoveItem();
+                text.questCheck = true;
             }
+
+            text.SetInteraction(!text.active);
+            if (text.itemID != -1 && equippedItem == text.questItem)
+            {
+                inventoryMGR.AddItem(text.itemID);
+                text.itemID = -1;
+            }
+
+            if (!text.active) text.ChangeText();
         }
 
-        if (dTrigger && !text.active)
-        { // This is the talking trigger, but it only activated when not inspecting
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                trigger = false;
+        if (Input.GetKeyDown(KeyCode.R) && dTrigger)
+        {
+            if (!text.active && !dManager.dialogueObject.activeSelf)
+            { // This is the talking trigger, but it only activated when not inspecting
                 dText.TriggerDialogue();
             }
+            else
+            {
+                dText.manager.DisplayNextSentence();
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && !text.active)
         { // Inventory
             inventoryActive = !inventoryActive;
         }
@@ -82,8 +91,8 @@ public class PlayerController : MonoBehaviour
         else if (!inventoryActive && inventory.anchoredPosition.y > -566.0f)
         { // Go down when it's not all the way down
             inventory.anchoredPosition = new Vector3(inventory.anchoredPosition.x, inventory.anchoredPosition.y - 1000.0f * Time.deltaTime);
-            if (inventory.anchoredPosition.y < -560.0f)
-                inventoryMGR.FullHide();
+            //if (inventory.anchoredPosition.y < -560.0f)
+            //    inventoryMGR.FullHide();
         }
     }
 
@@ -91,6 +100,7 @@ public class PlayerController : MonoBehaviour
     {
         trigger = true;
         text = other.gameObject.GetComponent<TextID>();
+        dManager = other.gameObject.GetComponent<DialogueManager>();
         if (other.gameObject.GetComponent<DialogueTrigger>() != null)
         { // You can't talk to everything
             dTrigger = true;
@@ -109,7 +119,8 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.GetComponent<DialogueTrigger>() != null)
         {
             dTrigger = false;
-            other.gameObject.GetComponent<DialogueManager>().EndDialogue();
+            dManager.EndDialogue();
+            dManager = null;
         }
     }
 }
