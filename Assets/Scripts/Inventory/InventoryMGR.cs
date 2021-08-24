@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 public class InventoryMGR : MonoBehaviour
 {
@@ -49,14 +50,11 @@ public class InventoryMGR : MonoBehaviour
 
     public void RemoveItem()
     {
-        foreach(InventoryButton button in buttonArea.GetComponentsInChildren<InventoryButton>())
+        foreach (InventoryButton button in buttonArea.GetComponentsInChildren<InventoryButton>().Where(n => n.itemID == equippedItem))
         {
-            if (button.itemID == equippedItem)
-            {
-                Destroy(button.gameObject);
-                equippedItem = -1;
-                HideItem();
-            }
+            Destroy(button.gameObject);
+            equippedItem = -1;
+            HideItem();
         }
     }
 
@@ -73,7 +71,7 @@ public class InventoryMGR : MonoBehaviour
             case 3:
                 return new OddCheeseItem();
             case 4:
-                return new DIYBookItem();
+                return new BikeBookItem();
         }
         return new GenericItem();
     }

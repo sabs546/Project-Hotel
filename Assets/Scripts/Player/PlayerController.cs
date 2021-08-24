@@ -53,7 +53,10 @@ public class PlayerController : MonoBehaviour
             int equippedItem = inventoryMGR.equippedItem;
             if (text != null && equippedItem == text.questItem)
             {
-                inventoryMGR.RemoveItem();
+                if (text.removeQuestItem)
+                {
+                    inventoryMGR.RemoveItem();
+                }
                 text.questCheck = true;
             }
 

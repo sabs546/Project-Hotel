@@ -16,6 +16,7 @@ public class TextID : MonoBehaviour
     [HideInInspector]
     public bool active;
     private int textChain;                   // How many times have you read it
+    private int questTextChain;              // How many times have you read it
     private TextMeshProUGUI text;
     private TextMeshProUGUI questText;
 
@@ -24,6 +25,7 @@ public class TextID : MonoBehaviour
     {
         active = false;
         textChain = 0;
+        questTextChain = 0;
         text = interaction.GetComponentInChildren<TextMeshProUGUI>();
         if (questInteraction != null)
         {
@@ -54,10 +56,10 @@ public class TextID : MonoBehaviour
     {
         if (questInteraction != null && questCheck)
         {
-            if (textChain < questBackupText.Capacity)
+            if (questTextChain < questBackupText.Capacity)
             { // As long as you don't run out of backup text, keep going
-                questText.text = questBackupText[textChain].GetComponent<TextMeshProUGUI>().text;
-                textChain++;
+                questText.text = questBackupText[questTextChain].GetComponent<TextMeshProUGUI>().text;
+                questTextChain++;
             }
         }
         else
