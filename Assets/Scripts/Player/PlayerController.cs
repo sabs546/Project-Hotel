@@ -122,7 +122,10 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.GetComponent<DialogueTrigger>() != null)
         {
             dTrigger = false;
-            dManager.EndDialogue();
+            if (dManager.dialogueObject.activeSelf)
+            {
+                dManager.EndDialogue();
+            }
             dManager = null;
         }
     }
