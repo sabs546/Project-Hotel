@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                dText.manager.DisplayNextSentence();
+                dText.manager.DisplayNextSentence(dManager.dialogueText.text == dManager.currentSentence ? false : true);
             }
         }
 
@@ -113,15 +113,15 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     { // Both should stay triggered until you leave
+        trigger = false;
+        dTrigger = false;
         if (other.gameObject.GetComponent<TextID>() != null)
         {
-            trigger = false;
             other.gameObject.GetComponent<TextID>().SetInteraction(false);
         }
 
-        if (other.gameObject.GetComponent<DialogueTrigger>() != null)
+        if (other.gameObject.GetComponent<DialogueTrigger>() != null && dManager != null)
         {
-            dTrigger = false;
             if (dManager.dialogueObject.activeSelf)
             {
                 dManager.EndDialogue();

@@ -10,7 +10,11 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;     // The name area
     public TextMeshProUGUI dialogueText; // The dialogue area
     public GameObject dialogueObject;    // The entire dialogue area
+    public int outputDelay;              // Speed speech is formed at
+    [HideInInspector]
+    public string currentSentence;
 
+    private int backupOutputDelay;
     private Queue<string> sentences;     // All of the text for multiple lines of text
     private bool seen;
     private bool questSeen;
@@ -18,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        backupOutputDelay = outputDelay;
         sentences = new Queue<string>();
         seen = false;
         questSeen = false;
@@ -54,17 +59,24 @@ public class DialogueManager : MonoBehaviour
                 sentences.Enqueue(sentence);
     }
 
-    public void DisplayNextSentence()
+    public void DisplayNextSentence(bool skip = false)
     {
+        if (skip)
+        {
+            StopAllCoroutines();
+            dialogueText.text = currentSentence;
+            return;
+        }
+
         if (sentences.Count == 0)
         { // If the sentences run out put it away
             EndDialogue();
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        currentSentence = sentences.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(currentSentence));
     }
 
     IEnumerator TypeSentence (string sentence)
@@ -72,6 +84,12 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
+            while (outputDelay > 0)
+            {
+                outputDelay--;
+                yield return null;
+            }
+            outputDelay = backupOutputDelay;
             dialogueText.text += letter;
             yield return null;
         }

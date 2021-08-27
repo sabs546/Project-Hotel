@@ -10,10 +10,13 @@ public class ConversationTrigger : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public GameObject dialogueObject;    // The entire dialogue area
     public Conversation conversation;
+    public int outputDelay;              // Speed speech is formed at
 
+    private int backupOutputDelay;
     private Queue<Sprite> linkedPortrait;
     private Queue<string> linkedName;
     private Queue<string> sentences;     // All of the text for multiple lines of text
+    private string currentSentence;
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +24,13 @@ public class ConversationTrigger : MonoBehaviour
         linkedPortrait = new Queue<Sprite>();
         linkedName = new Queue<string>();
         sentences = new Queue<string>();
+        backupOutputDelay = outputDelay;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (dialogueObject.activeSelf && Input.GetKeyDown(KeyCode.R) && dialogueText.text == currentSentence)
         {
             DisplayNextSentence();
         }
@@ -57,6 +61,7 @@ public class ConversationTrigger : MonoBehaviour
         portrait.sprite = linkedPortrait.Dequeue();
         nameText.text = linkedName.Dequeue();
         string sentence = sentences.Dequeue();
+        currentSentence = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
@@ -66,6 +71,12 @@ public class ConversationTrigger : MonoBehaviour
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
+            while (outputDelay > 0)
+            {
+                outputDelay--;
+                yield return null;
+            }
+            outputDelay = backupOutputDelay;
             dialogueText.text += letter;
             yield return null;
         }
