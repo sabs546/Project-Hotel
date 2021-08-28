@@ -54,21 +54,15 @@ public class TextID : MonoBehaviour
 
     public void ChangeText()
     {
-        if (questInteraction != null && questCheck)
-        {
-            if (questTextChain < questBackupText.Capacity)
-            { // As long as you don't run out of backup text, keep going
-                questText.text = questBackupText[questTextChain].GetComponent<TextMeshProUGUI>().text;
-                questTextChain++;
-            }
+        if (questInteraction != null && questCheck && questTextChain < questBackupText.Capacity)
+        { // As long as you don't run out of backup text, keep going
+            questText.text = questBackupText[questTextChain].GetComponent<TextMeshProUGUI>().text;
+            questTextChain++;
         }
-        else
-        {
-            if (textChain < backupText.Capacity)
-            { // As long as you don't run out of backup text, keep going
-                text.text = backupText[textChain].GetComponent<TextMeshProUGUI>().text;
-                textChain++;
-            }
+        else if (textChain < backupText.Capacity)
+        { // As long as you don't run out of backup text, keep going
+            text.text = backupText[textChain].GetComponent<TextMeshProUGUI>().text;
+            textChain++;
         }
     }
 }

@@ -103,7 +103,10 @@ public class PlayerController : MonoBehaviour
     {
         trigger = true;
         text = other.gameObject.GetComponent<TextID>();
-        dManager = other.gameObject.GetComponent<DialogueManager>();
+        if (dManager == null && other.gameObject.GetComponent<DialogueManager>() != null)
+        {
+            dManager = other.gameObject.GetComponent<DialogueManager>();
+        }
         if (other.gameObject.GetComponent<DialogueTrigger>() != null)
         { // You can't talk to everything
             dTrigger = true;
@@ -115,18 +118,10 @@ public class PlayerController : MonoBehaviour
     { // Both should stay triggered until you leave
         trigger = false;
         dTrigger = false;
+        dManager = null;
         if (other.gameObject.GetComponent<TextID>() != null)
         {
             other.gameObject.GetComponent<TextID>().SetInteraction(false);
-        }
-
-        if (other.gameObject.GetComponent<DialogueTrigger>() != null && dManager != null)
-        {
-            if (dManager.dialogueObject.activeSelf)
-            {
-                dManager.EndDialogue();
-            }
-            dManager = null;
         }
     }
 }

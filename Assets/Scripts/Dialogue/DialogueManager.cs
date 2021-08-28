@@ -100,4 +100,9 @@ public class DialogueManager : MonoBehaviour
         dialogueObject.SetActive(false);
         seen = true;
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        EndDialogue();
+    }
 }
