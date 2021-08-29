@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && !inventoryActive &&
             trigger && (dManager == null || !dManager.dialogueObject.activeSelf))
-        { // The normal trigger for inspection
+        { // The normal trigger for inspection, can't be triggered if talking or looking at inventory
             int equippedItem = inventoryMGR.equippedItem;
             if (text != null && equippedItem == text.questItem)
             {
