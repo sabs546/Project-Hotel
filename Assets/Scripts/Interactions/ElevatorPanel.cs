@@ -10,7 +10,8 @@ public class ElevatorPanel : MonoBehaviour
     private BoxCollider2D doorInteraction; // It might clash, just in case
     private Animator      animator;        // Door open animation
     private bool          trigger;         // In trigger range
-    public  GameObject    interaction;     // SO closing the interaction box doesn't close the door
+    private GameObject    interaction;     // So closing the interaction box doesn't close the door
+    public  bool          close;           // Close the door instead
 
     // Start is called before the first frame update
     void Start()
@@ -36,8 +37,8 @@ public class ElevatorPanel : MonoBehaviour
     {
         if (trigger && Input.GetKeyDown(KeyCode.E) && interaction.activeSelf)
         { // Elevator door open code
-            animator.SetBool("Open", !animator.GetBool("Open"));
-            doorCollider.enabled = !animator.GetBool("Open");
+            animator.SetBool("Open", !close);
+            doorCollider.enabled = close;
         }
     }
 
