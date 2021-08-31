@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Return) && !text.active)
+        if (Input.GetKeyDown(KeyCode.Return) && (text == null || !text.active))
         { // Inventory
             inventoryActive = !inventoryActive;
         }

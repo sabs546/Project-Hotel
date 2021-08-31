@@ -9,4 +9,6 @@ public class ConversationDialogue
     public Sprite portrait;
     [TextArea(3, 10)]
     public string[] sentences;
+    public BaseTask[] task;
+    public bool current;
 }
