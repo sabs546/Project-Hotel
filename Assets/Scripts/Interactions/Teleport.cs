@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Teleport : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Teleport : MonoBehaviour
     public Camera camera;
     public GameObject wipe;
     public GameObject player;
+    public BaseTask[] tasks;
 
     private RectTransform wipeRect;
     private bool transition;
@@ -39,12 +41,21 @@ public class Teleport : MonoBehaviour
                 player.transform.position = location.transform.position;
                 camera.transform.position = camLocation.transform.position;
                 if (spr.color.a > 0.0f)
+                {
                     spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, spr.color.a - 1.0f * Time.deltaTime);
+                }
                 else
                 {
                     wipeRect.localScale = new Vector3(wipeRect.localScale.x, 0.0f, wipeRect.localScale.x);
                     spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 1.0f);
                     transition = false;
+                }
+
+                if (tasks.FirstOrDefault() != null)
+                {
+                    tasks.First().enabled = false;
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = true;
+                    GetComponents<BoxCollider2D>().First(n => !n.isTrigger).enabled = true;
                 }
             }
         }
@@ -60,6 +71,12 @@ public class Teleport : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("Open", true);
+        }
+
+        if (tasks.FirstOrDefault() != null)
+        {
+            tasks.First().enabled = true;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = false;
         }
     }
 }

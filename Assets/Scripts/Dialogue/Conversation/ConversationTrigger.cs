@@ -32,17 +32,24 @@ public class ConversationTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentDialogue = conversation.dialogue.FirstOrDefault(n => n.current);
-        BaseTask task = null;
-        if (currentDialogue != null)
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            task = currentDialogue.task.FirstOrDefault(n => n.enabled);
-        }
+            currentDialogue = conversation.dialogue.FirstOrDefault(n => n.current);
+            BaseTask task = null;
+            if (currentDialogue != null)
+            {
+                task = currentDialogue.task.FirstOrDefault(n => n.enabled);
+            }
 
-        if (dialogueObject.activeSelf && Input.GetKeyDown(KeyCode.R) &&
-            dialogueText.text == currentSentence && task == null)
-        {
-            DisplayNextSentence();
+            if (dialogueObject.activeSelf && dialogueText.text == currentSentence && task == null)
+            {
+                currentDialogue.current = false;
+                if (currentDialogue.task.Length > 0)
+                {
+                    currentDialogue.task.First().enabled = true;
+                }
+                DisplayNextSentence();
+            }
         }
     }
 
