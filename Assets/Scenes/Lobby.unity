@@ -2551,6 +2551,9 @@ MonoBehaviour:
   nextTask: {fileID: 0}
   targetTransform: {fileID: 798584807}
   movementSpeed: {x: 20, y: 20}
+  minimumSpeed: {x: 0, y: 0}
+  movementDecay: 10
+  legRoom: 6
 --- !u!1 &603961209 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 741727907568221962, guid: fceb02d3fd932014bad2c65bc11717f9,
@@ -5531,6 +5534,9 @@ MonoBehaviour:
   nextTask: {fileID: 0}
   targetTransform: {fileID: 798584807}
   movementSpeed: {x: 10, y: 10}
+  minimumSpeed: {x: 0, y: 0}
+  movementDecay: 0
+  legRoom: 3
 --- !u!1001 &1323440667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7523,7 +7529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723218217}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.190129, y: 8.182304, z: 0}
+  m_LocalPosition: {x: -10.190129, y: 9.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1994805975}
@@ -8103,6 +8109,9 @@ MonoBehaviour:
   nextTask: {fileID: 0}
   targetTransform: {fileID: 5570007233679720438}
   movementSpeed: {x: 10, y: 10}
+  minimumSpeed: {x: 0, y: 0}
+  movementDecay: 0
+  legRoom: 3
 --- !u!1001 &1783796514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8639,6 +8648,9 @@ MonoBehaviour:
   nextTask: {fileID: 1445540876}
   targetTransform: {fileID: 798584807}
   movementSpeed: {x: 10, y: 10}
+  minimumSpeed: {x: 0, y: 0}
+  movementDecay: 0
+  legRoom: 3
 --- !u!1 &1872308978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 741727907568221962, guid: fceb02d3fd932014bad2c65bc11717f9,

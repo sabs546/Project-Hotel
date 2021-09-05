@@ -6,12 +6,15 @@ public class ApproachTask : BaseTask
 {
     public Transform targetTransform;
     public Vector2 movementSpeed;
+    public Vector2 minimumSpeed;
+    public float movementDecay;
+    public float legRoom;
 
     public void Update()
     {
         ExecuteTask();
-        if (objectTransform.position.x <= targetTransform.position.x + 3.0f && objectTransform.position.x >= targetTransform.position.x - 3.0f &&
-            objectTransform.position.y <= targetTransform.position.y + 3.0f && objectTransform.position.y >= targetTransform.position.y - 3.0f)
+        if (objectTransform.position.x <= targetTransform.position.x + legRoom && objectTransform.position.x >= targetTransform.position.x - legRoom &&
+            objectTransform.position.y <= targetTransform.position.y + legRoom && objectTransform.position.y >= targetTransform.position.y - legRoom)
         {
             if (nextTask != null)
             {
@@ -23,8 +26,18 @@ public class ApproachTask : BaseTask
 
     protected override void ExecuteTask()
     {
+        // Slow down over time
+        if (movementSpeed.x > minimumSpeed.x)
+        {
+            movementSpeed.x -= movementDecay * Time.deltaTime;
+        }
+        if (movementSpeed.y > minimumSpeed.y)
+        {
+            movementSpeed.y -= movementDecay * Time.deltaTime;
+        }
+
         // Moving to the targetted area
-        if (objectTransform.position.x >= targetTransform.position.x + 3.0f || objectTransform.position.x <= targetTransform.position.x - 3.0f)
+        if (objectTransform.position.x >= targetTransform.position.x + legRoom || objectTransform.position.x <= targetTransform.position.x - legRoom)
         {
             if (objectTransform.position.x < targetTransform.position.x)
             {
@@ -36,7 +49,7 @@ public class ApproachTask : BaseTask
             }
         }
 
-        if (objectTransform.position.y >= targetTransform.position.y + 3.0f || objectTransform.position.y <= targetTransform.position.y - 3.0f)
+        if (objectTransform.position.y >= targetTransform.position.y + legRoom || objectTransform.position.y <= targetTransform.position.y - legRoom)
         {
             if (objectTransform.position.y < targetTransform.position.y)
             {
