@@ -39,6 +39,7 @@ public class InventoryMGR : MonoBehaviour
     public void AddItem(int itemID)
     {
         // Item and buttons
+        Storage.inventory.Add(itemID);
         Item item = FindItem(itemID);
         item.GenerateItem(ref item);
 
@@ -55,6 +56,7 @@ public class InventoryMGR : MonoBehaviour
             Destroy(button.gameObject);
             equippedItem = -1;
             HideItem();
+            Storage.inventory.Remove(button.itemID);
         }
     }
 

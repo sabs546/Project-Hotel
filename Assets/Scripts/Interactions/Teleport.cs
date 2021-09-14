@@ -5,22 +5,23 @@ using System.Linq;
 
 public class Teleport : MonoBehaviour
 {
-    public GameObject location;
-    public GameObject camLocation;
-    public Camera camera;
-    public GameObject wipe;
-    public GameObject player;
-    public BaseTask[] tasks;
-
-    private RectTransform wipeRect;
-    private bool transition;
-    private AudioSource source;
+    public GameObject      location;
+    public GameObject      camLocation;
+    public GameObject      wipe;
+    public GameObject      player;
+    public BaseTask[]      tasks;
+    
+    private Camera         camera;
+    private RectTransform  wipeRect;
+    private bool           transition;
+    private AudioSource    source;
     private SpriteRenderer spr;
-    private Animator animator;
+    private Animator       animator;
     // Start is called before the first frame update
     void Start()
     {
         transition = false;
+        camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         wipeRect = wipe.GetComponent<RectTransform>();
         source = GetComponent<AudioSource>();
         spr = wipeRect.GetComponent<SpriteRenderer>();
@@ -31,9 +32,9 @@ public class Teleport : MonoBehaviour
     void Update()
     {
         if (transition)
-        {
+        { // To stop the rect from constantly changing
             if (wipeRect.localScale.y < 1750.0f)
-            {
+            { // Expand the wipe
                 wipeRect.localScale = new Vector3(wipeRect.localScale.x, wipeRect.localScale.y + 10.0f, wipeRect.localScale.x);
             }
             else
@@ -51,9 +52,8 @@ public class Teleport : MonoBehaviour
                     transition = false;
                 }
 
-                if (tasks.FirstOrDefault() != null)
+                if (tasks.FirstOrDefault() != null && !tasks.FirstOrDefault().enabled)
                 {
-                    tasks.First().enabled = false;
                     GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = true;
                     GetComponents<BoxCollider2D>().First(n => !n.isTrigger).enabled = true;
                 }

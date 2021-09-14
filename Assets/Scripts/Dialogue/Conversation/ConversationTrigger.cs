@@ -6,19 +6,20 @@ using System.Linq;
 
 public class ConversationTrigger : MonoBehaviour
 {
-    public  SpriteRenderer  portrait;          // The portrait area of the guy
-    public  TextMeshProUGUI nameText;
-    public  TextMeshProUGUI dialogueText;
-    public  GameObject      dialogueObject;    // The entire dialogue area
-    public  Conversation    conversation;
-    public  int             outputDelay;       // Speed speech is formed at
+    public  SpriteRenderer       portrait;          // The portrait area of the guy
+    public  TextMeshProUGUI      nameText;
+    public  TextMeshProUGUI      dialogueText;
+    public  GameObject           dialogueObject;    // The entire dialogue area
+    public  Conversation         conversation;
+    public  int                  outputDelay;       // Speed speech is formed at
+    public  BaseTask[]           endingTasks;       // If the dialogue is finished, ending tasks are executed
 
-    private int             backupOutputDelay;
-    private Queue<Sprite>   linkedPortrait;
-    private Queue<string>   linkedName;
-    private Queue<string>   sentences;         // All of the text for multiple lines of text
-    private string          currentSentence;
-    private ConversationDialogue        currentDialogue;
+    private int                  backupOutputDelay;
+    private Queue<Sprite>        linkedPortrait;
+    private Queue<string>        linkedName;
+    private Queue<string>        sentences;         // All of the text for multiple lines of text
+    private string               currentSentence;
+    private ConversationDialogue currentDialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -110,6 +111,10 @@ public class ConversationTrigger : MonoBehaviour
         dialogueObject.SetActive(false);
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = true;
         GetComponent<Collider2D>().enabled = false;
+        if (endingTasks.Length > 0)
+        {
+            endingTasks.First().enabled = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
