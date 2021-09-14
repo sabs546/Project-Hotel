@@ -28,6 +28,7 @@ public class InventoryMGR : MonoBehaviour
         image.preserveAspect = true;
         fullHide = false;
         equippedItem = -1;
+        Storage.inventory = new List<int>();
     }
 
     // Update is called once per frame

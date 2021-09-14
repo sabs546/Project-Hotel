@@ -7344,7 +7344,7 @@ PrefabInstance:
         type: 3}
       propertyPath: buttonArea
       value: 
-      objectReference: {fileID: 1859225961}
+      objectReference: {fileID: 1914154785}
     - target: {fileID: 5074843062871290617, guid: 02a3acbe5784b7a4da83486a62c9accc,
         type: 3}
       propertyPath: imageArea
