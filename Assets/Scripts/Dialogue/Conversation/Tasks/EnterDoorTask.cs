@@ -47,6 +47,7 @@ public class EnterDoorTask : BaseTask
                 nextTask.GetComponent<BaseTask>().enabled = true;
             }
             enabled = false;
+            recordedDistance = new Vector2(0.0f, 0.0f);
         }
     }
 }
