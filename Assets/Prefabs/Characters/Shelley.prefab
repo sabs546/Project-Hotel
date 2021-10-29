@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4084188143217765071, guid: bcc3b4abaddc64a44a3c65d0f431755a,
+        type: 3}
+      propertyPath: dialogue.name
+      value: Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: -4084188143217765071, guid: bcc3b4abaddc64a44a3c65d0f431755a,
+        type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 1181920226646336180}
     - target: {fileID: 41247443709452364, guid: bcc3b4abaddc64a44a3c65d0f431755a,
         type: 3}
       propertyPath: m_Color.r

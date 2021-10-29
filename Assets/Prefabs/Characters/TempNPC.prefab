@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2163608545596641093}
   - component: {fileID: 41247443709452364}
   - component: {fileID: 539295788742841896}
-  - component: {fileID: 5515996392369679498}
+  - component: {fileID: -4084188143217765071}
   - component: {fileID: 1881314685325583358}
   - component: {fileID: 8496101953751657961}
   - component: {fileID: 7208655020100220609}
@@ -103,9 +103,10 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   dialogueObject: {fileID: 0}
   outputDelay: 2
-  backupOutputDelay: 0
-  currentSentence: 
---- !u!114 &5515996392369679498
+  currentSentence:
+    changePortrait: {fileID: 0}
+    text: 
+--- !u!114 &-4084188143217765071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

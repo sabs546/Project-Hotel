@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                dText.manager.DisplayNextSentence(dManager.dialogueText.text == dManager.currentSentence ? false : true);
+                dText.manager.DisplayNextSentence(dManager.dialogueText.text == dManager.currentSentence.text ? false : true);
             }
         }
 

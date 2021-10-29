@@ -208,12 +208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &118983824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 741727908551921329, guid: fceb02d3fd932014bad2c65bc11717f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1408549950}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &118983825 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
@@ -841,7 +835,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2c58f317b1f80541a75577a1496c82e, type: 3}
 --- !u!1 &183490619 stripped
@@ -1037,7 +1031,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1768,7 +1762,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
+    - target: {fileID: 396672976246740825, guid: a2c58f317b1f80541a75577a1496c82e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 421a68c0cf88004498454148a4bf8b5f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2c58f317b1f80541a75577a1496c82e, type: 3}
 --- !u!224 &449548526 stripped
@@ -2950,18 +2950,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7148445810593266070}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &702797783 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3568798191091775985, guid: 07a626ef262a4274fa3a36a12bb2d718,
+--- !u!1 &717149267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 741727908551921329, guid: fceb02d3fd932014bad2c65bc11717f9,
     type: 3}
-  m_PrefabInstance: {fileID: 8557952748078334121}
+  m_PrefabInstance: {fileID: 1408549950}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8557952748078334123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f326166f4ef189c48b5632a3d81c3647, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &725445928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7602,7 +7596,7 @@ MonoBehaviour:
       task: []
       current: 1
     - name: Shelley
-      portrait: {fileID: 21300000, guid: d2383c26adc77e54bac57885a3c9c0f6, type: 3}
+      portrait: {fileID: 21300000, guid: 09a14ce3ae7ed2a42a64978609cf6271, type: 3}
       sentences:
       - Any idea where the staff is? Mr. Eel is getting hungry.
       task:
@@ -7615,7 +7609,7 @@ MonoBehaviour:
       task: []
       current: 1
     - name: Shelley
-      portrait: {fileID: 21300000, guid: d2383c26adc77e54bac57885a3c9c0f6, type: 3}
+      portrait: {fileID: 21300000, guid: 421a68c0cf88004498454148a4bf8b5f, type: 3}
       sentences:
       - I think I left some Eel food in my room.
       task:
@@ -9964,49 +9958,74 @@ PrefabInstance:
       propertyPath: questInteraction
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 7575575883539394187, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+    - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 7575575883539394187, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+    - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
       propertyPath: dialogue.questSentences.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7575575883539394187, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+    - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
       propertyPath: dialogue.newQuestSentences.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7575575883539394187, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+    - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
+      propertyPath: dialogue.sentences.Array.data[0].text
       value: I love the smell of a good *mhfgffgfgffhhhh*~
       objectReference: {fileID: 0}
-    - target: {fileID: 7575575883539394187, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+    - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
-      propertyPath: dialogue.newSentences.Array.data[0]
-      value: I know this is a dialogue box but she has completely forgot you're here
-      objectReference: {fileID: 0}
-    - target: {fileID: 7575575883539394187, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
+      propertyPath: dialogue.sentences.Array.data[1].text
       value: Sorry who are you again?
       objectReference: {fileID: 0}
-    - target: {fileID: 7575575883539394187, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+    - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
-      propertyPath: dialogue.sentences.Array.data[2]
+      propertyPath: dialogue.sentences.Array.data[2].text
       value: Ah right well it's nice to meet you
       objectReference: {fileID: 0}
-    - target: {fileID: 7575575883539394187, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+    - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
-      propertyPath: dialogue.questSentences.Array.data[0]
+      propertyPath: dialogue.newSentences.Array.data[0].text
+      value: I know this is a dialogue box but she has completely forgot you're here
+      objectReference: {fileID: 0}
+    - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.data[0].text
       value: Don't worry about the book, I'm done with it now
       objectReference: {fileID: 0}
-    - target: {fileID: 7575575883539394187, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+    - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
-      propertyPath: dialogue.newQuestSentences.Array.data[0]
+      propertyPath: dialogue.newQuestSentences.Array.data[0].text
+      value: She has forgotten about you and gotten lost in her book
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546846561880910967, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: I love the smell of a good *mhfgffgfgffhhhh*~
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546846561880910967, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: Sorry who are you again?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546846561880910967, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2].text
+      value: Ah right well it's nice to meet you
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546846561880910967, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.data[0].text
+      value: Don't worry about the book, I'm done with it now
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546846561880910967, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: dialogue.newQuestSentences.Array.data[0].text
       value: She has forgotten about you and gotten lost in her book
       objectReference: {fileID: 0}
     - target: {fileID: 8488781142511037836, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
@@ -10014,7 +10033,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bella
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4840b93fd17e4e840af1aae59cfd2ec2, type: 3}
 --- !u!4 &2083963006 stripped
 Transform:
@@ -10622,31 +10642,98 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 607999782}
     m_Modifications:
-    - target: {fileID: 2857218558378865438, guid: 1a32074315b052e4fa400a3fa793b376,
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
       propertyPath: dialogue.questSentences.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2857218558378865438, guid: 1a32074315b052e4fa400a3fa793b376,
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
       propertyPath: dialogue.newQuestSentences.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2857218558378865438, guid: 1a32074315b052e4fa400a3fa793b376,
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
-      propertyPath: dialogue.questSentences.Array.data[0]
+      propertyPath: dialogue.name
+      value: Skelter
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: Aw man this Rosy Boa looks sweet!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: "What\u2019s up dude? You want to see some cool snakes while we wait
+        for the staff to show up?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.data[0].text
+      value: Hey dude check this one out!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.data[0].text
       value: Hey you read that one too dude? You got some good taste.
       objectReference: {fileID: 0}
-    - target: {fileID: 2857218558378865438, guid: 1a32074315b052e4fa400a3fa793b376,
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
-      propertyPath: dialogue.newQuestSentences.Array.data[0]
+      propertyPath: dialogue.newQuestSentences.Array.data[0].text
       value: That issue's a good one.
       objectReference: {fileID: 0}
-    - target: {fileID: 2857218558378865438, guid: 1a32074315b052e4fa400a3fa793b376,
+    - target: {fileID: 2755345299428405730, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
       propertyPath: manager
       value: 
       objectReference: {fileID: 5570007233679720439}
+    - target: {fileID: 3204360473913854629, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204360473913854629, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.newQuestSentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204360473913854629, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: Aw man this Rosy Boa looks sweet!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204360473913854629, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: "What\u2019s up dude? You want to see some cool snakes while we wait
+        for the staff to show up?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204360473913854629, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.data[0].text
+      value: Hey dude check this one out!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204360473913854629, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.data[0].text
+      value: Hey you read that one too dude? You got some good taste.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204360473913854629, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: dialogue.newQuestSentences.Array.data[0].text
+      value: That issue's a good one.
+      objectReference: {fileID: 0}
     - target: {fileID: 4271961648313757721, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
       propertyPath: m_Name
@@ -10794,6 +10881,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Joe
       objectReference: {fileID: 0}
+    - target: {fileID: 1487427324987650400, guid: eb7066bc6dd53bf46981bf8c5c085f66,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: Non-gender conforming adult, I'm starving, dude
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487427324987650400, guid: eb7066bc6dd53bf46981bf8c5c085f66,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.data[0].text
+      value: You got anything to eat?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487427324987650400, guid: eb7066bc6dd53bf46981bf8c5c085f66,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.data[0].text
+      value: Thanks for the orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487427324987650400, guid: eb7066bc6dd53bf46981bf8c5c085f66,
+        type: 3}
+      propertyPath: dialogue.newQuestSentences.Array.data[0].text
+      value: It's a good orange
+      objectReference: {fileID: 0}
     - target: {fileID: 4034137078409548432, guid: eb7066bc6dd53bf46981bf8c5c085f66,
         type: 3}
       propertyPath: m_Offset.x
@@ -10904,7 +11011,8 @@ PrefabInstance:
       propertyPath: dialogueObject
       value: 
       objectReference: {fileID: 1894448455}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: eb7066bc6dd53bf46981bf8c5c085f66, type: 3}
 --- !u!1001 &6905142682981222580
 PrefabInstance:
@@ -10918,16 +11026,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cora
       objectReference: {fileID: 0}
+    - target: {fileID: 4022571024682890858, guid: ffc0352667c8e544cb6a4374e37f53c2,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: You back out again? What's the matter?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022571024682890858, guid: ffc0352667c8e544cb6a4374e37f53c2,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.data[0].text
+      value: I guess it's pretty suffocating in there
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327333565833662417, guid: ffc0352667c8e544cb6a4374e37f53c2,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: You back out again? What's the matter?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327333565833662417, guid: ffc0352667c8e544cb6a4374e37f53c2,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.data[0].text
+      value: I guess it's pretty suffocating in there
+      objectReference: {fileID: 0}
     - target: {fileID: 7681665625917915301, guid: ffc0352667c8e544cb6a4374e37f53c2,
         type: 3}
       propertyPath: backupText.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7681665625917915301, guid: ffc0352667c8e544cb6a4374e37f53c2,
         type: 3}
       propertyPath: interaction
       value: 
-      objectReference: {fileID: 118983824}
+      objectReference: {fileID: 717149267}
     - target: {fileID: 7681665625917915301, guid: ffc0352667c8e544cb6a4374e37f53c2,
         type: 3}
       propertyPath: backupText.Array.data[0]
@@ -11008,7 +11136,8 @@ PrefabInstance:
       propertyPath: dialogueObject
       value: 
       objectReference: {fileID: 1807133993}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4327333565833662417, guid: ffc0352667c8e544cb6a4374e37f53c2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ffc0352667c8e544cb6a4374e37f53c2, type: 3}
 --- !u!4 &6905142682981222581 stripped
 Transform:
@@ -11149,60 +11278,117 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelley
       objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
       propertyPath: dialogue.newSentences.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
       propertyPath: dialogue.questSentences.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
       propertyPath: dialogue.newQuestSentences.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
+      propertyPath: dialogue.sentences.Array.data[0].text
       value: "Don\u2019t worry Mr. Eel, I\u2019m going to rescue you from this glass
         prison!"
       objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
-      propertyPath: dialogue.newSentences.Array.data[0]
-      value: Just hang in there Mr. Eel, I'm here for you!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
-        type: 3}
-      propertyPath: dialogue.questSentences.Array.data[0]
-      value: Thanks for the orange sir! I can't feed this to Mr. Eel but I appreciate
-        it!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
-        type: 3}
-      propertyPath: dialogue.questSentences.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
-        type: 3}
-      propertyPath: dialogue.newQuestSentences.Array.data[0]
-      value: It's really tasty, did you buy it from that strange orange man over
-        there?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6597828399337363478, guid: 6e3357e0aefe1f141b5e0a6f65850457,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
+      propertyPath: dialogue.sentences.Array.data[1].text
       value: "Hi! What\u2019s your name? I\u2019m Shelly! I can\u2019t kelp being
         so excited to see the Marine Biology expo in the next town over! Are you
         going there too?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.data[0].text
+      value: Just hang in there Mr. Eel, I'm here for you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.data[0].text
+      value: Thanks for the orange sir! I can't feed this to Mr. Eel but I appreciate
+        it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.newQuestSentences.Array.data[0].text
+      value: It's really tasty, did you buy it from that strange orange man over
+        there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].changePortrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 7cdff8450a41ba2438d8c687e247cc7e,
+        type: 3}
+    - target: {fileID: 5786839662330880429, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].changePortrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 421a68c0cf88004498454148a4bf8b5f,
+        type: 3}
+    - target: {fileID: 6488036899617725162, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488036899617725162, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488036899617725162, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488036899617725162, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.newQuestSentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488036899617725162, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: "Don\u2019t worry Mr. Eel, I\u2019m going to rescue you from this glass
+        prison!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488036899617725162, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: "Hi! What\u2019s your name? I\u2019m Shelly! I can\u2019t kelp being
+        so excited to see the Marine Biology expo in the next town over! Are you
+        going there too?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488036899617725162, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.data[0].text
+      value: Just hang in there Mr. Eel, I'm here for you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488036899617725162, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.data[0].text
+      value: Thanks for the orange sir! I can't feed this to Mr. Eel but I appreciate
+        it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488036899617725162, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: dialogue.newQuestSentences.Array.data[0].text
+      value: It's really tasty, did you buy it from that strange orange man over
+        there?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e3357e0aefe1f141b5e0a6f65850457, type: 3}
@@ -11364,65 +11550,71 @@ PrefabInstance:
       propertyPath: m_Name
       value: MrOrange
       objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
-        type: 3}
-      propertyPath: dialogue.questSentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
-        type: 3}
-      propertyPath: dialogue.newQuestSentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
         type: 3}
-      propertyPath: dialogue.name
-      value: Mr. Orange
+      propertyPath: dialogue.questSentences.Array.size
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
         type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
+      propertyPath: dialogue.newQuestSentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0].text
       value: The service in this establishment is abominable! How am I expected to
         survey the land in this town for proper orange cultivation if I cannot even
       objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
         type: 3}
-      propertyPath: dialogue.newSentences.Array.data[0]
-      value: Hello again friend! I'm still here with a high quality citrus or citrus-based
-        product!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
-        type: 3}
-      propertyPath: dialogue.questSentences.Array.data[0]
-      value: Pleasure doing business sir!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
-        type: 3}
-      propertyPath: dialogue.newQuestSentences.Array.data[0]
-      value: Hello friend!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
-        type: 3}
-      propertyPath: manager
-      value: 
-      objectReference: {fileID: 702797783}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
+      propertyPath: dialogue.sentences.Array.data[1].text
       value: get a room key!
       objectReference: {fileID: 0}
-    - target: {fileID: 8823075982823031635, guid: 07a626ef262a4274fa3a36a12bb2d718,
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
         type: 3}
-      propertyPath: dialogue.sentences.Array.data[2]
+      propertyPath: dialogue.sentences.Array.data[2].text
       value: "Oh! Greetings potential customer uh\u2026 I mean\u2026 friend! Would
         you perhaps like to purchase a high quality citrus or citrus-based product!?"
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
+        type: 3}
+      propertyPath: dialogue.newSentences.Array.data[0].text
+      value: Hello again friend! I'm still here with a high quality citrus or citrus-based
+        product!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.data[0].text
+      value: Pleasure doing business sir!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
+        type: 3}
+      propertyPath: dialogue.newQuestSentences.Array.data[0].text
+      value: Hello friend!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929457235421626799, guid: 07a626ef262a4274fa3a36a12bb2d718,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: get a room key!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929457235421626799, guid: 07a626ef262a4274fa3a36a12bb2d718,
+        type: 3}
+      propertyPath: dialogue.questSentences.Array.data[0].text
+      value: Pleasure doing business sir!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929457235421626799, guid: 07a626ef262a4274fa3a36a12bb2d718,
+        type: 3}
+      propertyPath: dialogue.newQuestSentences.Array.data[0].text
+      value: Hello friend!
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 07a626ef262a4274fa3a36a12bb2d718, type: 3}
 --- !u!4 &8557952748078334122 stripped
 Transform:

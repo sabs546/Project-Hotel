@@ -12,10 +12,10 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogueObject;    // The entire dialogue area
     public int outputDelay;              // Speed speech is formed at
     [HideInInspector]
-    public string currentSentence;
+    public Sentence currentSentence;
 
     private int backupOutputDelay;
-    private Queue<string> sentences;     // All of the text for multiple lines of text
+    private Queue<Sentence> sentences;     // All of the text for multiple lines of text
     private bool seen;
     private bool questSeen;
 
@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         backupOutputDelay = outputDelay;
-        sentences = new Queue<string>();
+        sentences = new Queue<Sentence>();
         seen = false;
         questSeen = false;
     }
@@ -42,20 +42,20 @@ public class DialogueManager : MonoBehaviour
         if (GetComponent<TextID>().questCheck)
         {
             if (!questSeen) // If this is your first time talking
-                foreach (string sentence in dialogue.questSentences)
+                foreach (Sentence sentence in dialogue.questSentences)
                     sentences.Enqueue(sentence);
             else // After that new sentences come out
-                foreach (string sentence in dialogue.newQuestSentences)
+                foreach (Sentence sentence in dialogue.newQuestSentences)
                     sentences.Enqueue(sentence);
             questSeen = true;
             return;
         }
 
         if (!seen) // If this is your first time talking
-            foreach (string sentence in dialogue.sentences)
+            foreach (Sentence sentence in dialogue.sentences)
                 sentences.Enqueue(sentence);
         else // After that new sentences come out
-            foreach (string sentence in dialogue.newSentences)
+            foreach (Sentence sentence in dialogue.newSentences)
                 sentences.Enqueue(sentence);
     }
 
@@ -64,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         if (skip)
         {
             StopAllCoroutines();
-            dialogueText.text = currentSentence;
+            dialogueText.text = currentSentence.text;
             return;
         }
 
@@ -75,8 +75,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         currentSentence = sentences.Dequeue();
+        if (currentSentence.changePortrait != null)
+        {
+            portrait.GetComponent<SpriteRenderer>().sprite = currentSentence.changePortrait;
+        }
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(currentSentence));
+        StartCoroutine(TypeSentence(currentSentence.text));
     }
 
     IEnumerator TypeSentence (string sentence)
