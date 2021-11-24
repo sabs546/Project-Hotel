@@ -1073,7 +1073,6 @@ GameObject:
   m_Component:
   - component: {fileID: 754445185}
   - component: {fileID: 754445192}
-  - component: {fileID: 754445191}
   - component: {fileID: 754445190}
   - component: {fileID: 754445189}
   - component: {fileID: 754445188}
@@ -1226,19 +1225,6 @@ MonoBehaviour:
   questItem: 0
   removeQuestItem: 0
   active: 0
---- !u!114 &754445191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754445184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 857468f0385c00845a8a30b34d9e603d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  close: 0
 --- !u!212 &754445192
 SpriteRenderer:
   m_ObjectHideFlags: 0
