@@ -23,6 +23,11 @@ public class CameraControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (unlockX && player.position.x > minX && player.position.x < maxX)
+        {
+            transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
+        }
+
         if (unlockY && player.position.y > minY && player.position.y < maxY)
         {
             transform.position = new Vector3(transform.position.x, player.position.y, transform.position.z);

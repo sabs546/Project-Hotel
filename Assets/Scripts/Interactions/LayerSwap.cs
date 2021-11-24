@@ -9,12 +9,12 @@ public class LayerSwap : MonoBehaviour
     public string previousLayer;
     public int previousOrder;
 
-    private SpriteRenderer sprite;
+    private List<SpriteRenderer> sprites;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        sprites = new List<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -23,17 +23,24 @@ public class LayerSwap : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        sprites.Add(collision.GetComponent<SpriteRenderer>());
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
-        sprite = collision.gameObject.GetComponent<SpriteRenderer>();
-        // Move them over to the new layer (or back to the old one)
-        sprite.sortingLayerName = targetLayer;
-        sprite.sortingOrder = targetOrder;
+        foreach (SpriteRenderer sprite in sprites)
+        { // Move them over to the new layer (or back to the old one)
+            sprite.sortingLayerName = targetLayer;
+            sprite.sortingOrder = targetOrder;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        sprite.sortingLayerName = previousLayer;
-        sprite.sortingOrder = previousOrder;
+        collision.GetComponent<SpriteRenderer>().sortingLayerName = previousLayer;
+        collision.GetComponent<SpriteRenderer>().sortingOrder = previousOrder;
+        sprites.Remove(collision.GetComponent<SpriteRenderer>());
     }
 }
