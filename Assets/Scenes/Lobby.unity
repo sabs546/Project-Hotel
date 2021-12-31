@@ -353,7 +353,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2c58f317b1f80541a75577a1496c82e, type: 3}
 --- !u!224 &144731429 stripped
@@ -424,7 +424,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1406,7 +1406,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2988,7 +2988,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4773,7 +4773,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5113,7 +5113,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2c58f317b1f80541a75577a1496c82e, type: 3}
 --- !u!1 &1241239436 stripped
@@ -5552,7 +5552,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6013,7 +6013,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2c58f317b1f80541a75577a1496c82e, type: 3}
 --- !u!224 &1401018880 stripped
@@ -6082,6 +6082,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cora Interaction
       objectReference: {fileID: 0}
+    - target: {fileID: 741727908551921340, guid: fceb02d3fd932014bad2c65bc11717f9,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6537,7 +6542,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7237,7 +7242,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2c58f317b1f80541a75577a1496c82e, type: 3}
 --- !u!224 &1692686256 stripped
@@ -7838,7 +7843,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8129,7 +8134,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     - target: {fileID: 741727908551921341, guid: fceb02d3fd932014bad2c65bc11717f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8775,7 +8780,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1930049708}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2c58f317b1f80541a75577a1496c82e, type: 3}
 --- !u!224 &1894448451 stripped
@@ -10734,6 +10739,11 @@ PrefabInstance:
       propertyPath: dialogue.newQuestSentences.Array.data[0].text
       value: That issue's a good one.
       objectReference: {fileID: 0}
+    - target: {fileID: 3204360473913854629, guid: 1a32074315b052e4fa400a3fa793b376,
+        type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 5570007233679720439}
     - target: {fileID: 4271961648313757721, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
       propertyPath: m_Name
@@ -11598,6 +11608,11 @@ PrefabInstance:
       propertyPath: dialogue.newQuestSentences.Array.data[0].text
       value: Hello friend!
       objectReference: {fileID: 0}
+    - target: {fileID: 8191785109436889832, guid: 07a626ef262a4274fa3a36a12bb2d718,
+        type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 8557952748078334128}
     - target: {fileID: 8929457235421626799, guid: 07a626ef262a4274fa3a36a12bb2d718,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1].text
@@ -11628,3 +11643,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8557952748078334121}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8557952748078334128 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3568798191091775985, guid: 07a626ef262a4274fa3a36a12bb2d718,
+    type: 3}
+  m_PrefabInstance: {fileID: 8557952748078334121}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8557952748078334123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f326166f4ef189c48b5632a3d81c3647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
