@@ -4415,7 +4415,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5004531278555049960, guid: dc21b3c84156bfc44ac01156e59ad50e,
+      objectReference: {fileID: -938299029868956650, guid: 95ed91bdf8822694c81eefd0a70c7b58,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b85e5d6c5636d4042a49cf2ba682d9f4, type: 3}
@@ -9967,12 +9967,12 @@ PrefabInstance:
     - target: {fileID: 4299730230713503044, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4299730230713503044, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4299730230713503044, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
@@ -10003,6 +10003,26 @@ PrefabInstance:
         type: 3}
       propertyPath: questInteraction
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730841001303651520, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730841001303651520, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784078676173320168, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784078676173320168, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 7133446562553976624, guid: 4840b93fd17e4e840af1aae59cfd2ec2,
         type: 3}
