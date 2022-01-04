@@ -7749,6 +7749,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1819868323257978964, guid: 02a3acbe5784b7a4da83486a62c9accc,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819868323257978964, guid: 02a3acbe5784b7a4da83486a62c9accc,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819868323257978964, guid: 02a3acbe5784b7a4da83486a62c9accc,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819868323257978964, guid: 02a3acbe5784b7a4da83486a62c9accc,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819868323257978964, guid: 02a3acbe5784b7a4da83486a62c9accc,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.23
+      objectReference: {fileID: 0}
     - target: {fileID: 5074843062871290617, guid: 02a3acbe5784b7a4da83486a62c9accc,
         type: 3}
       propertyPath: buttonArea
@@ -7822,18 +7847,24 @@ PrefabInstance:
     - target: {fileID: 6084499664182174426, guid: 02a3acbe5784b7a4da83486a62c9accc,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6084499664182174426, guid: 02a3acbe5784b7a4da83486a62c9accc,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7151828799351301820, guid: 02a3acbe5784b7a4da83486a62c9accc,
         type: 3}
       propertyPath: m_SortingLayer
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7151828799351301820, guid: 02a3acbe5784b7a4da83486a62c9accc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -406189734964982647, guid: 4e32ef4bfdc70b34986cf6cea416b2da,
+        type: 3}
     - target: {fileID: 8104359103905776205, guid: 02a3acbe5784b7a4da83486a62c9accc,
         type: 3}
       propertyPath: Inventory
