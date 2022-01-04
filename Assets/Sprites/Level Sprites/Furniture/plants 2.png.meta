@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: a73e635cab680cc4fb46648d3d7cb4f9
+guid: 68ee74e212d3fef4b9e42b0dcaf0d731
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 17966141371178181
-    second: Bella_0
+      213: -8723701574618566900
+    second: plants 2_0
   - first:
-      213: 4699463414497438214
-    second: Bella_1
+      213: 1688253993538292607
+    second: plants 2_1
   - first:
-      213: 5058358638210197810
-    second: Bella_2
+      213: 1949627892203870923
+    second: plants 2_2
   - first:
-      213: -8187597596181793573
-    second: Bella_3
+      213: 1809816430557157646
+    second: plants 2_3
+  - first:
+      213: -3322635752892669633
+    second: plants 2_4
+  - first:
+      213: -2948568327694650443
+    second: plants 2_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -76,7 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -88,7 +94,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bella_0
+      name: plants 2_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 15
-        width: 43
-        height: 61
+        x: 3
+        y: 32
+        width: 25
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,20 +119,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ccd9624c14df3000800000000000000
-      internalID: 17966141371178181
+      spriteID: c0f285653af2fe680800000000000000
+      internalID: -8723701574618566900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bella_1
+      name: plants 2_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 32
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b0c77ff02ed6710800000000000000
+      internalID: 1688253993538292607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants 2_2
       rect:
         serializedVersion: 2
         x: 53
-        y: 15
-        width: 43
-        height: 61
+        y: 32
+        width: 25
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60a6010a319d73140800000000000000
-      internalID: 4699463414497438214
+      spriteID: bca51070d387e0b10800000000000000
+      internalID: 1949627892203870923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bella_2
+      name: plants 2_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 14
-        width: 37
-        height: 63
+        x: 82
+        y: 32
+        width: 25
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2392c019166e23640800000000000000
-      internalID: 5058358638210197810
+      spriteID: e09560c6472cd1910800000000000000
+      internalID: 1809816430557157646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bella_3
+      name: plants 2_4
       rect:
         serializedVersion: 2
-        x: 152
-        y: 14
-        width: 37
-        height: 63
+        x: 8
+        y: 1
+        width: 66
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,8 +203,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd4fdb3bd5fcf5e80800000000000000
-      internalID: -8187597596181793573
+      spriteID: f31e1d60360a3e1d0800000000000000
+      internalID: -3322635752892669633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants 2_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 6
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3fac76ab49417d0800000000000000
+      internalID: -2948568327694650443
       vertices: []
       indices: 
       edges: []
