@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !inventoryActive &&
+        if (Input.GetMouseButtonDown(0) && !inventoryActive &&
             trigger && (dManager == null || !dManager.dialogueObject.activeSelf))
         { // The normal trigger for inspection, can't be triggered if talking or looking at inventory
             int equippedItem = inventoryMGR.equippedItem;
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
             if (!text.active) text.ChangeText();
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && dTrigger)
+        if (Input.GetMouseButtonDown(1) && dTrigger)
         {
             if (!text.active && !dManager.dialogueObject.activeSelf)
             { // This is the talking trigger, but it only activated when not inspecting
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Return) && (text == null || !text.active))
+        if (Input.GetKeyDown(KeyCode.E) && (text == null || !text.active))
         { // Inventory
             inventoryActive = !inventoryActive;
         }
