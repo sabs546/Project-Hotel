@@ -13,6 +13,7 @@ public class TextID : MonoBehaviour
     public bool questCheck;
     public int questItem;
     public bool removeQuestItem;
+    public BaseTask task;
     [HideInInspector]
     public bool active;
     private int textChain;                   // How many times have you read it
