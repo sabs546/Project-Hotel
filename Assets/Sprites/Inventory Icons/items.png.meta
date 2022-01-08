@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 9e7c2ab37ba708943ae84b97fa215b10
+guid: 200193f4a91974d47ac73b3dce82164e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -168038466571574124
-    second: front desk_0
+      213: 6761164967045977113
+    second: items_0
   - first:
-      213: 8309358558900962263
-    second: front desk_1
+      213: 5508725064705088119
+    second: items_1
   - first:
-      213: -2071830764886415298
-    second: front desk_2
+      213: -68751727340038015
+    second: items_2
   - first:
-      213: 2175734835402799451
-    second: front desk_3
-  - first:
-      213: 2628976675848881981
-    second: front desk_4
-  - first:
-      213: -5441624283045101669
-    second: front desk_5
-  - first:
-      213: -5249661324729624920
-    second: front desk_6
+      213: 6099581493293703690
+    second: items_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -108,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: front desk_0
+      name: items_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 67
-        width: 31
-        height: 30
+        x: 1
+        y: 4
+        width: 45
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 494666ba7e10badf0800000000000000
-      internalID: -168038466571574124
+      spriteID: 914579027bb74dd50800000000000000
+      internalID: 6761164967045977113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: front desk_1
+      name: items_1
       rect:
         serializedVersion: 2
-        x: 73
-        y: 7
-        width: 51
-        height: 90
+        x: 61
+        y: 13
+        width: 36
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d3c4ae9595c05370800000000000000
-      internalID: 8309358558900962263
+      spriteID: 77a9907824ce27c40800000000000000
+      internalID: 5508725064705088119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: front desk_2
+      name: items_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 7
-        width: 29
-        height: 90
+        x: 105
+        y: 4
+        width: 43
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e38283875e06f33e0800000000000000
-      internalID: -2071830764886415298
+      spriteID: 188d3321baebb0ff0800000000000000
+      internalID: -68751727340038015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: front desk_3
+      name: items_3
       rect:
         serializedVersion: 2
-        x: 168
-        y: 74
-        width: 16
-        height: 25
+        x: 161
+        y: 3
+        width: 38
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,71 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5970a52e43c13e10800000000000000
-      internalID: 2175734835402799451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: front desk_4
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 57
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3782c69b500c7420800000000000000
-      internalID: 2628976675848881981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: front desk_5
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 33
-        width: 20
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9ff4f7ab877b74b0800000000000000
-      internalID: -5441624283045101669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: front desk_6
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 10
-        width: 23
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a6526cc6d47527b0800000000000000
-      internalID: -5249661324729624920
+      spriteID: a02615a1d0116a450800000000000000
+      internalID: 6099581493293703690
       vertices: []
       indices: 
       edges: []
