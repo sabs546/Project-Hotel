@@ -12791,7 +12791,7 @@ PrefabInstance:
     - target: {fileID: 655940070426196953, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.5
+      value: -3.75
       objectReference: {fileID: 0}
     - target: {fileID: 655940070426196953, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
@@ -12837,6 +12837,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 655940070426196953, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 655940070426196953, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 938777577457555298, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
@@ -12898,6 +12908,27 @@ PrefabInstance:
       propertyPath: dialogueObject
       value: 
       objectReference: {fileID: 449548530}
+    - target: {fileID: 1697429153483773136, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3073979500134157106, guid: 1477eafa6ed99c9459c2258c529a5448,
+        type: 3}
+    - target: {fileID: 1697429153483773136, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1697429153483773136, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1697429153483773136, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5152081281059314449, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
       propertyPath: m_Name
@@ -13014,6 +13045,56 @@ PrefabInstance:
       propertyPath: dialogue.newQuestSentences.Array.data[0].text
       value: It's really tasty, did you buy it from that strange orange man over
         there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130543123069245813, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130543123069245813, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130543123069245813, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130543123069245813, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130543123069245813, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130543123069245813, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293019219530072669, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293019219530072669, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293019219530072669, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293019219530072669, guid: 6e3357e0aefe1f141b5e0a6f65850457,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e3357e0aefe1f141b5e0a6f65850457, type: 3}
