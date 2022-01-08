@@ -11754,7 +11754,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.76, y: 1.16}
+  m_Size: {x: 0.61, y: 1.16}
   m_EdgeRadius: 0
 --- !u!95 &2113764467
 Animator:
@@ -12412,12 +12412,12 @@ PrefabInstance:
     - target: {fileID: 8443280460399579345, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 8443280460399579345, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 8.18
       objectReference: {fileID: 0}
     - target: {fileID: 8443280460399579345, guid: 1a32074315b052e4fa400a3fa793b376,
         type: 3}
@@ -12786,12 +12786,12 @@ PrefabInstance:
     - target: {fileID: 655940070426196953, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.5
+      value: 12.11
       objectReference: {fileID: 0}
     - target: {fileID: 655940070426196953, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.75
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 655940070426196953, guid: 6e3357e0aefe1f141b5e0a6f65850457,
         type: 3}
