@@ -33,7 +33,7 @@ public class ConversationTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetMouseButtonDown(1))
         {
             currentDialogue = conversation.dialogue.FirstOrDefault(n => n.current);
             BaseTask task = null;
@@ -66,10 +66,6 @@ public class ConversationTrigger : MonoBehaviour
                 linkedName.Enqueue(dialogue.name);
                 sentences.Enqueue(sentence);
             }
-        }
-        if (conversation.dialogue.FirstOrDefault().task.FirstOrDefault() != null)
-        {
-            conversation.dialogue.First().task.First().enabled = true;
         }
     }
 
