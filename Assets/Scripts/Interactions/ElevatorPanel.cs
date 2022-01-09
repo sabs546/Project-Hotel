@@ -35,7 +35,7 @@ public class ElevatorPanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (trigger && Input.GetKeyDown(KeyCode.E) && interaction.activeSelf)
+        if (trigger && Input.GetMouseButtonDown(0) && interaction.activeSelf)
         { // Elevator door open code
             animator.SetBool("Open", !close);
             doorCollider.enabled = close;
