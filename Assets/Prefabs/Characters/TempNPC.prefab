@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1881314685325583358}
   - component: {fileID: 8496101953751657961}
   - component: {fileID: 7208655020100220609}
+  - component: {fileID: -8185502834400390140}
   m_Layer: 0
   m_Name: TempNPC
   m_TagString: Untagged
@@ -145,6 +146,7 @@ MonoBehaviour:
   questCheck: 0
   questItem: 0
   removeQuestItem: 0
+  task: {fileID: 0}
   active: 0
 --- !u!61 &8496101953751657961
 BoxCollider2D:
@@ -198,3 +200,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &-8185502834400390140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5792524287839694733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc9d98ee73c2184bb11b4144ed602bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
