@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
             }
 
             text.SetInteraction(!text.active);
-            if (text.itemID != -1 && equippedItem == text.questItem)
+            if (text.itemID != -1 && (equippedItem == text.questItem || text.questItem == -1))
             {
                 inventoryMGR.AddItem(text.itemID);
                 text.itemID = -1;
