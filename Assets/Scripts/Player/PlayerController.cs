@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class PlayerController : MonoBehaviour
 {
@@ -51,20 +52,28 @@ public class PlayerController : MonoBehaviour
             trigger && (dManager == null || !dManager.dialogueObject.activeSelf))
         { // The normal trigger for inspection, can't be triggered if talking or looking at inventory
             int equippedItem = inventoryMGR.equippedItem;
-            if (text != null && equippedItem == text.questItem)
+            for (int i = 0; i < text.interactions.Length; i++)
             {
-                if (text.removeQuestItem)
+                Interaction interaction = null;
+                if (equippedItem == text.interactions[i].requiredItemID && text.interactions[i].requiredItemID != -1)
                 {
-                    inventoryMGR.RemoveItem();
+                    interaction = text.interactions[i];
+                    if (interaction.removeRequiredItem)
+                    {
+                        inventoryMGR.RemoveItem();
+                    }
+                    interaction.checkCompletion = true;
+                    text.ChangeDialogueOption(i);
                 }
-                text.questCheck = true;
             }
 
             text.SetInteraction(!text.active);
-            if (text.itemID != -1 && (equippedItem == text.questItem || text.questItem == -1))
+            // If the quest drops something, and you're holding a required item or there is no item
+            if (text.interactions[text.currentDialogueOption].droppedItemID != -1 &&
+                (equippedItem == text.interactions[text.currentDialogueOption].requiredItemID || text.interactions[text.currentDialogueOption].requiredItemID == -1))
             {
-                inventoryMGR.AddItem(text.itemID);
-                text.itemID = -1;
+                inventoryMGR.AddItem(text.interactions[text.currentDialogueOption].droppedItemID);
+                text.interactions[text.currentDialogueOption].droppedItemID = -1;
             }
 
             if (!text.active) text.ChangeText();

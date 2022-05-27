@@ -29,7 +29,7 @@ public class ElevatorPanel : MonoBehaviour
             }
         }
         animator = GetComponentInParent<Animator>();
-        interaction = GetComponent<TextID>().interaction;
+        interaction = GetComponent<TextID>().interactions[GetComponent<TextID>().currentDialogueOption].interaction;
     }
 
     // Update is called once per frame

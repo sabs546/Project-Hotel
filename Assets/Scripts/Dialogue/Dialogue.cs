@@ -10,6 +10,7 @@ public class Dialogue
     public Sentence[] newSentences;
     public Sentence[] questSentences;
     public Sentence[] newQuestSentences;
+    public QuestBlock[] questSentenceSets;
 }
 
 [System.Serializable]
@@ -18,4 +19,11 @@ public class Sentence
     public Sprite changePortrait;
     [TextArea(3, 10)]
     public string text;
+}
+
+[System.Serializable]
+public class QuestBlock
+{
+    public Sentence[] questSentences;
+    public Sentence[] newQuestSentences;
 }

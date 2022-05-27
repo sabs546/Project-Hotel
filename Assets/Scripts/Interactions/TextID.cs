@@ -5,17 +5,11 @@ using TMPro;
 
 public class TextID : MonoBehaviour
 {
-    public GameObject interaction;           // The actual interaction object that needs activating
-    public GameObject questInteraction;      // The interaction if you have the right thing equipped
-    public List<GameObject> backupText;      // The text for after you've investigated it once
-    public List<GameObject> questBackupText; // The text after you speak once the quest is completed
-    public int itemID;
-    public bool questCheck;
-    public int questItem;
-    public bool removeQuestItem;
-    public BaseTask task;
     [HideInInspector]
     public bool active;
+    public Interaction[] interactions;
+    public int currentDialogueOption;
+
     private int textChain;                   // How many times have you read it
     private int questTextChain;              // How many times have you read it
     private TextMeshProUGUI text;
@@ -27,11 +21,14 @@ public class TextID : MonoBehaviour
         active = false;
         textChain = 0;
         questTextChain = 0;
-        text = interaction.GetComponentInChildren<TextMeshProUGUI>();
-        if (questInteraction != null)
+        if (interactions.Length > 0)
         {
-            questText = questInteraction.GetComponentInChildren<TextMeshProUGUI>();
+            foreach (Interaction i in interactions)
+            {
+                i.text = i.interaction.GetComponentInChildren<TextMeshProUGUI>();
+            }
         }
+        currentDialogueOption = 0;
     }
 
     // Update is called once per frame
@@ -43,27 +40,34 @@ public class TextID : MonoBehaviour
     public void SetInteraction(bool setting)
     {
         active = setting;
-        if (questInteraction != null && questCheck)
-        {
-            questInteraction.SetActive(active);
-        }
-        else
-        {
-            interaction.SetActive(active);
-        }
+        interactions[currentDialogueOption].interaction.SetActive(active);
     }
 
     public void ChangeText()
     {
-        if (questInteraction != null && questCheck && questTextChain < questBackupText.Capacity)
-        { // As long as you don't run out of backup text, keep going
-            questText.text = questBackupText[questTextChain].GetComponent<TextMeshProUGUI>().text;
-            questTextChain++;
-        }
-        else if (textChain < backupText.Capacity)
-        { // As long as you don't run out of backup text, keep going
-            text.text = backupText[textChain].GetComponent<TextMeshProUGUI>().text;
+        if (textChain < interactions[currentDialogueOption].backupText.Capacity)
+        {
+            interactions[currentDialogueOption].text.text = interactions[currentDialogueOption].backupText[textChain].GetComponent<TextMeshProUGUI>().text;
             textChain++;
         }
     }
+
+    public void ChangeDialogueOption(int number)
+    {
+        currentDialogueOption = number;
+    }
+}
+
+[System.Serializable]
+public class Interaction
+{
+    public GameObject interaction;      // The interaction if you have the right thing equipped
+    public List<GameObject> backupText; // The text after you speak once
+    public int droppedItemID;           // ID of an item you're given
+    public bool checkCompletion;        // Check if the quest is complete
+    public int requiredItemID;          // Item needed to complete the quest
+    public bool removeRequiredItem;     // Do they take the quest item away?
+    [HideInInspector]
+    public TextMeshProUGUI text;
+    public BaseTask task;
 }
