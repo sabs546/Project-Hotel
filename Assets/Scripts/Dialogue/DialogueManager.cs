@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
         nameText.text = dialogue.name;
         sentences.Clear();
         dialogueObject.SetActive(true);
-        if (GetComponent<TextID>().questCheck)
+        if (GetComponent<TextID>().interactions[GetComponent<TextID>().currentDialogueOption].checkCompletion)
         {
             if (!questSeen) // If this is your first time talking
                 foreach (Sentence sentence in dialogue.questSentences)

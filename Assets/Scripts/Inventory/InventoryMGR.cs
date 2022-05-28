@@ -75,6 +75,8 @@ public class InventoryMGR : MonoBehaviour
                 return new OddCheeseItem();
             case 4:
                 return new BikeBookItem();
+            case 5:
+                return new GlochidItem();
         }
         return new GenericItem();
     }
