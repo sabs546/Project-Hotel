@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 10fb25591ffe60443a6474e278094927
+guid: 3e6ed0ee57322bf42acdec9572228429
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7021751089922115211
-    second: skelterbounce_0
+      213: -3609613712771572568
+    second: skelterbounce 1_0
   - first:
-      213: -3139614744472403350
-    second: skelterbounce_1
+      213: 7345392535756599526
+    second: skelterbounce 1_1
   - first:
-      213: -4918235910872583842
-    second: skelterbounce_2
+      213: -6369423532729191966
+    second: skelterbounce 1_2
   - first:
-      213: 2855849306444333849
-    second: skelterbounce_3
+      213: 9200341910750784106
+    second: skelterbounce 1_3
   - first:
-      213: 528606091013804481
-    second: skelterbounce_4
+      213: -6787279908774359964
+    second: skelterbounce 1_4
   - first:
-      213: 1259206573975217637
-    second: skelterbounce_5
+      213: 7879392211963203562
+    second: skelterbounce 1_5
   - first:
-      213: 2077702856973018451
-    second: skelterbounce_6
+      213: -9223107375446542134
+    second: skelterbounce 1_6
   - first:
-      213: 1900726782244116429
-    second: skelterbounce_7
+      213: -3217639692267341803
+    second: skelterbounce 1_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,12 +111,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: skelterbounce_0
+      name: skelterbounce 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 100
-        width: 62.5
+        width: 63
         height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -125,19 +125,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 579faf7269abd8e90800000000000000
-      internalID: -7021751089922115211
+      spriteID: 8ac1fd9e37318edc0800000000000000
+      internalID: -3609613712771572568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelterbounce_1
+      name: skelterbounce 1_1
       rect:
         serializedVersion: 2
-        x: 63
+        x: 64
         y: 100
-        width: 62.5
+        width: 63
         height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -146,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a62c4283609dd64d0800000000000000
-      internalID: -3139614744472403350
+      spriteID: 6e0f39df79310f560800000000000000
+      internalID: 7345392535756599526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelterbounce_2
+      name: skelterbounce 1_2
       rect:
         serializedVersion: 2
-        x: 126
+        x: 128
         y: 100
-        width: 62.5
+        width: 63
         height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -167,19 +167,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e51beda3f7aeebbb0800000000000000
-      internalID: -4918235910872583842
+      spriteID: 2e1b9ab2b034b97a0800000000000000
+      internalID: -6369423532729191966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelterbounce_3
+      name: skelterbounce 1_3
       rect:
         serializedVersion: 2
-        x: 189
+        x: 192
         y: 100
-        width: 62.5
+        width: 63
         height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,19 +188,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91309a230d302a720800000000000000
-      internalID: 2855849306444333849
+      spriteID: a6a607ae83e2eaf70800000000000000
+      internalID: 9200341910750784106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelterbounce_4
+      name: skelterbounce 1_4
       rect:
         serializedVersion: 2
         x: 0
         y: 1
-        width: 62.5
+        width: 63
         height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -209,19 +209,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c15cf8607cf55700800000000000000
-      internalID: 528606091013804481
+      spriteID: 46ccb5e22ecbec1a0800000000000000
+      internalID: -6787279908774359964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelterbounce_5
+      name: skelterbounce 1_5
       rect:
         serializedVersion: 2
-        x: 63
+        x: 64
         y: 1
-        width: 62.5
+        width: 63
         height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -230,19 +230,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e521ac15b9997110800000000000000
-      internalID: 1259206573975217637
+      spriteID: aefcb005879395d60800000000000000
+      internalID: 7879392211963203562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelterbounce_6
+      name: skelterbounce 1_6
       rect:
         serializedVersion: 2
-        x: 126
+        x: 128
         y: 1
-        width: 62.5
+        width: 63
         height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -251,19 +251,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 355e0b28dbb75dc10800000000000000
-      internalID: 2077702856973018451
+      spriteID: ac8393945b0f00080800000000000000
+      internalID: -9223107375446542134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skelterbounce_7
+      name: skelterbounce 1_7
       rect:
         serializedVersion: 2
-        x: 189
+        x: 192
         y: 1
-        width: 62.5
+        width: 63
         height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -272,8 +272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc75bbe10fcb06a10800000000000000
-      internalID: 1900726782244116429
+      spriteID: 51835376fb5a853d0800000000000000
+      internalID: -3217639692267341803
       vertices: []
       indices: 
       edges: []
