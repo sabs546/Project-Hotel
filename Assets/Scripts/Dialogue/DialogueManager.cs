@@ -16,16 +16,14 @@ public class DialogueManager : MonoBehaviour
 
     private int backupOutputDelay;
     private Queue<Sentence> sentences;     // All of the text for multiple lines of text
-    private bool seen;
-    private bool questSeen;
+    private TextID text;
 
     // Start is called before the first frame update
     void Start()
     {
         backupOutputDelay = outputDelay;
         sentences = new Queue<Sentence>();
-        seen = false;
-        questSeen = false;
+        text = GetComponent<TextID>();
     }
 
     // Update is called once per frame
@@ -39,23 +37,12 @@ public class DialogueManager : MonoBehaviour
         nameText.text = dialogue.name;
         sentences.Clear();
         dialogueObject.SetActive(true);
-        if (GetComponent<TextID>().interactions[GetComponent<TextID>().currentDialogueOption].checkCompletion)
-        {
-            if (!questSeen) // If this is your first time talking
-                foreach (Sentence sentence in dialogue.questSentences)
-                    sentences.Enqueue(sentence);
-            else // After that new sentences come out
-                foreach (Sentence sentence in dialogue.newQuestSentences)
-                    sentences.Enqueue(sentence);
-            questSeen = true;
-            return;
-        }
 
-        if (!seen) // If this is your first time talking
-            foreach (Sentence sentence in dialogue.sentences)
+        if (!dialogue.sentenceSets[text.currentDialogueOption].seen) // If this is your first time talking
+            foreach (Sentence sentence in dialogue.sentenceSets[text.currentDialogueOption].sentences)
                 sentences.Enqueue(sentence);
         else // After that new sentences come out
-            foreach (Sentence sentence in dialogue.newSentences)
+            foreach (Sentence sentence in dialogue.sentenceSets[text.currentDialogueOption].newSentences)
                 sentences.Enqueue(sentence);
     }
 
@@ -102,7 +89,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         dialogueObject.SetActive(false);
-        seen = true;
+        GetComponent<DialogueTrigger>().dialogue.sentenceSets[text.currentDialogueOption].seen = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)

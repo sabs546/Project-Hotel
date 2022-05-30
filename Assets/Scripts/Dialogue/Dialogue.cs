@@ -6,11 +6,7 @@ using UnityEngine;
 public class Dialogue
 {
     public string name;
-    public Sentence[] sentences;
-    public Sentence[] newSentences;
-    public Sentence[] questSentences;
-    public Sentence[] newQuestSentences;
-    public QuestBlock[] questSentenceSets;
+    public SentenceBlock[] sentenceSets;
 }
 
 [System.Serializable]
@@ -22,8 +18,10 @@ public class Sentence
 }
 
 [System.Serializable]
-public class QuestBlock
+public class SentenceBlock
 {
-    public Sentence[] questSentences;
-    public Sentence[] newQuestSentences;
+    public Sentence[] sentences;
+    public Sentence[] newSentences;
+    [HideInInspector]
+    public bool seen;
 }
